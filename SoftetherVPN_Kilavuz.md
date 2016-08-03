@@ -1,0 +1,1989 @@
+1.GİRİŞ
+=======
+
+Bu doküman VPN bağlantılarında Softether VPN'in tam potansiyelli kullanımına ilişkin bilgilendirmek amacıyla oluşturulmuştur.
+
+The SoftEther VPN official manual contains an overview of and information on how to use the latest release of next-generation VPN communications software provided by SoftEther VPN Project, how to construct a VPN, and how to solve problems. The manual is designed for network administrators, system administrators, system instructors, IT professionals and end users with detailed knowledge of computers who require information about the specifications of SoftEther VPN software.
+
+One of the most important features of SoftEther VPN is that, when utilizing the advanced and efficient VPN functions, the end user is able to use VPN communications without a detailed knowledge of VPN. In other words, the software is easy to use and sufficient security is maintained even when in the initial state.
+
+SoftEther VPN kullanıcılara internet gibi bir IP iletişim ağı kullanarak güvenli bir şekilde yüksek performanslı Sanal Özel Ağ (VPN) oluşturmak için olanak sağlar.
+
+2. SOFTETHER VPN GENEL BAKIŞ
+============================
+
+SoftEther VPN, eski VPN yazılımlarında veya donanımlarında bulunmayan birçok yenilikçi özellik sunan bir VPN yazılımıdır. Bu bölüm SoftEther VPN içinde bulunan yazılıma dair genel bilgiler, fonksiyonları ve ek bilgiler içerir.
+
+2.1 Softether VPN nedir?
+------------------------
+
+SoftEther VPN stabillik, esneklik ve genişleme olanağı sunan yeni nesil VPN yazılımıdır. Ayrıca yüksek bant genişliği üreten ve yüksek yükleme gerektiren büyük şirketler ve internet sağlayıcıları gibi gelişmiş ağlar ile uyumludur.
+
+Bu bölüm SoftEther VPN hakkında genel bilgiler, eski VPN protokolü ile karşılaştırılması ve gelişmiş fonksiyonların açıklamasını içerir.
+
+### 2.1.1 Yapısı ve VPN Çalışma Prensibi
+
+VPN, 1998 yıllarında yayılmaya başlayan bir teknolojidir. VPN, kullanıcılara Internet gibi sanal bir ağa varolan bir IP ağı içerisinde bağlanmayı sağlayan ve sanal ağ içinde serbestçe iletişim kurmasına olanak sağlayan bir teknolojidir.
+
+Ortak VPN yapısına ait özellikler:
+
+-   #### Tünelleme ve Kapsülleme
+![](https://www.softether.org/@api/deki/files/83/=1-1-2.png?size=webview)
+![] *Ortak VPN yapısı ve çalışma prensibi.*
+
+-   #### Şifreleme ile iletilen verilerin güvenliğinin sağlanması 
+![](https://www.softether.org/@api/deki/files/84/=1-1-3.png)![][1] veri *gönderme ve Internet üzerinden veri alma tehlikesi.*
+![](https://www.softether.org/@api/deki/files/85/=1-1-4.png?size=webview)
+![][2] *şifreli ve şifreli olmayan paketler.*
+
+-   #### Daha iyi Bağlantı ve Ağ Bağımsızlığı
+![](https://www.softether.org/@api/deki/files/86/=1-1-5.png?size=webview)
+![][3] İ*nternet üzerinde TCP/ IP bağlantısı gerçekleştirirken en az birinin global bir IP adresi olmalıdır ve port public olmalıdır.*
+![](https://www.softether.org/@api/deki/files/87/=1-1-6.png?size=webview)
+![][4] *Kötü niyetli VPN kullanıcılarına karşı dinlemelerin önlenmesi.*
+-   #### Özel hat yerine ucuz internet bağlantısı kullanılabilir
+![](https://www.softether.org/@api/deki/files/88/=1-1-7.png?size=webview)
+![][5] *özel hat yerine ucuz ve hızlı Internet bağlantısı kullanma.*
+
+### 2.1.2 Eski VPN'lerdeki Sınırlamalar
+
+-   #### Network gateway cihazlarının geçilmesinde zorluk
+![](https://www.softether.org/@api/deki/files/89/=1-1-8.png?size=webview)![][6] *Birçok eski VPN protokolleri, NAT router güvenlik duvarlarnı vb geçmekte zorlanır.*
+
+-   #### VPN ile iletişim kuran Protokolün Sınırlamaları
+![](https://www.softether.org/@api/deki/files/90/=1-1-9.png?size=webview)
+![][7] VPN protokolü eski *IP'leri enkapsüle eder ve bu paketler dışındaki paketleri alamaz, gönderemez. *
+
+-   #### IP routing zorunludur
+![](https://www.softether.org/@api/deki/files/91/=1-1-10.png?size=webview)
+![][8] *Routingi desteklemeyen cihazlar eski IP tabanındaki VPN ile iletişim kuramazlar*.
+
+-   #### Belli platformlara bağlılık
+![](https://www.softether.org/@api/deki/files/92/=1-1-11.png)
+![][9] *Farklı üreticilerin VPN ürünleri arasında iletişim yürütülemez.*
+
+-   #### Yüksek maliyet düşük performans
+
+#### Sonuç:
+
+#### Eski VPN protokol'deki eksiklikleri telafi etmek için yeni bir VPN sistemine ihtiyaç var
+
+### Eski VPN protokolü yukarıda açıklanan sorunları ve diğer çeşitli sorunları içerir. Yani yüksek fonksiyon sorunlarını ve sınırlamaları çözen, güvenilir, son derece esnek VPN sistemi çok gereklidir.
+
+###  2.1.3 SoftEther VPN'lerin Avantajları ve Özellikleri
+
+SoftEther VPN birçok yeni ve yenilikçi işlevlere sahip olan VPN yazılımıdır.
+
+#### SoftEther VPN Özellikleri
+
+Sadece SoftEther VPN kullanarak geçmiş VPN sorunlarının çözümü basit bir operasyon ile gerçekleştirilebilir.
+
+SoftEther VPN Ethernet'e set edilmiştir. SoftEther VPN ve aralarında TCP / IP protokolüne dayanan SoftEther VPN protokolü denilen tünel bağlayarak yazılım tarafından gerçekleştirilen bu tür geleneksel ağ bağdaştırıcısı anahtarlama HUB ve katman 3 anahtarı olarak, ağ cihazları kullanıldığında, şu ana kadar mümkün olmayan kullanıcının son derece esnek VPN oluşturabilmesi mümkün olmuştur.
+![](https://www.softether.org/@api/deki/files/93/=1-1-12.png?size=webview)
+![][10] *SoftEther VPN için ethernet üzerindeki çeşitli donanım cihazlarını sanal yapma.*
+
+#### Etherneti sanal yapmanın avantajları
+
+Eski VPN protokollerinin aksine, SoftEther VPN iletişim için katman 2 (Ethernet) hedeflemektedir. Eski katman 3 hedeflemiş VPN'lerde, kapsüllü IP paketleri tünelden akıyordu. Ama SoftEther VPN ile bu tünelden akan kapsüllü Ethernet olacak.
+![](https://www.softether.org/@api/deki/files/94/=1-1-13.png?size=webview)
+![][11]
+
+*Base-to-base connection VPN kurulduğunda, eski VPN protokolünün ve SoftetherVPN'in karşılaştırılması*
+![](https://www.softether.org/@api/deki/files/94/=1-1-13.png?size=webview)
+![][12]
+
+*SoftEther VPN ile NAT proxy sunucusu veya güvenlik duvarı üzerinden geçiş.*
+
+### 2.1.4 Kararlılık ve Güvenlik
+
+Daha önce belirtildiği gibi, SoftEther VPN sadece VPN bağlantıları için TCP/IP protokolünü kullanır ve herhangi bir Ethernet frame tünellenebilir. VPN iletişimi yapıldığında, SoftEther VPN internet standart şifreleme protokolü tarafından tüm verileri şifreler. Buna Secure Socket Layer (SSL) denir. Bu anda sistem yöneticisi, elektronik imza algoritmasının herhangi bir şifreleme algoritması seçer, kullanabilir. 
+
+SoftEther VPN ile, sadece iletişim şifreli değildir. Ancak kullanıcı kimlik doğrulaması ve sunucu kimlik doğrulaması ile ilgili güvenlik takviye edilir. 
+
+VPN bağlantılarını iletmek ve kullanıcı kimlik doğrulama gibi güvenlik kontrolleri için kullanılan protokol, Softether VPN protokoldür. Softether VPN protokolü sadece SSL ile iletişim içeriğini şifrelemez, ama VPN sunucusu, VPN kullanıısı ya da VPN köprüsü tarafından oluşturulan eş zamanlı SSL bağlantıları kurar.
+
+Ayrıca belli bir zaman aralığında ve bağlayarak zamanlamasını değiştirerek, stabil bazı özel ağ cihazları aracılığıyla iletişim kurabilir sayede belirli bir zaman aralığı için kaybolur TCP / IP bağlantısı.
+![](https://www.softether.org/@api/deki/files/96/=1-1-15.png?size=webview)
+![][13]
+
+*SoftEther VPN protokolü ile kullanıcı kimlik doğrulaması.*
+
+2.2 Softether VPN bileşenleri
+-----------------------------
+
+SoftEther VPN Server VPN Client VPN Köprüsü ve birçok ortak yazılım bileşenlerinden oluşmaktadır. Bilgisayarınızda yüklü olan yazılım çalıştırılabilir olsun ya da olmasın, SoftEther VPN kullanırken, VPN yapısını anlamak için gereklidir. Yazılımın bir listesi ve işlevleri bu bölümde verilmektedir.
+
+### 2.2.1 SoftEther VPN Sunucu
+
+#### SoftEther VPN Sunucusu Rolü
+
+SoftEther VPN Sunucu SoftEther VPN sistemi için en önemli yazılımdır. Adından da anlaşılacağı gibi, SoftEther VPN Sunucu ağ üzerinden uzaktan bulunan VPN Client ve VPN Köprüsü gelen bağlantıları kabul etmek VPN sunucusu rolü oynamaktadır.
+
+Yeni bir VPN oturumu kullanıcı kimlik doğrulama işlevi Sanal Hub akan Ethernet çerçeveleri ile ilgili diğer VPN Server için sanal Hub, bağlıysa, bu tür güvenlik politikasının access listesindeki paket filtreleme gibi ağ yönetimi için gerekli olan fonksiyonların çoğunluğu sağlanır.
+
+Birden fazla sanal Hub SoftEther VPN Server içinde oluşturulur, sanal katman 3 switch fonksiyonu Sanal Hub arasındaki IP yönlendirmesini yapmak için sağlanmıştır. 
+![](https://www.softether.org/@api/deki/files/97/=1-2-1.png?size=webview)![][14]
+
+*Çoklu Sanal Hub ve sanal katman 3 anahtarları tek bir SoftEther VPN Server için oluşturulabilir.*
+
+#### Yerel Köprü
+
+SoftEther VPN Sunucusu herhangi Sanal Hub ve SoftEther VPN sunucusu işletim bilgisayara bağlı ağ bağdaştırıcısı Ethernet segmenti ile katman 2 ile köprü bağlantısı gerçekleştirebilirsiniz. Bu, yerel köprü olarak adlandırılır. Yerel köprü durumundaki bir SoftEther VPN Sunucusu uzak bir yerden SoftEther VPN sunucusuna bağlanabilir ve köprü hedef ağa erişebilirsiniz.
+![](https://www.softether.org/@api/deki/files/98/=1-2-2.png?size=webview)
+![][15]
+
+*Yerel köprü işlevi Sanal Hub ve fiziksel ağ adaptörü arasındaki köprü bağlantısı.*
+
+#### Cascade Bağlantı
+
+SoftEther VPN sunucusu tarafından işletilen Sanal Hub kaskad bağlantı ile aynı veya ayrı bir bilgisayara SoftEther VPN sunucusu tarafından işletilen Sanal Hub ile bağlantılı olabilir. Cascade bağlantısı da ayrı bir bilgisayara işletim SoftEther VPN Köprüsü kabul edilebilir. Kaskad bağlantısı kullanarak iki veya daha fazla farklı ethernet segmentleri bağlayarak, aslında tek bir segment LAN olarak birbirinden ayrı iki LAN kullanabilirsiniz.
+![](https://www.softether.org/@api/deki/files/99/=1-2-3.png?size=webview)
+![][16]
+
+*Cascade bağlantısı.*
+
+#### SoftEther VPN Server Kısmı
+
+SoftEther VPN ile VPN yapısı, çoğu durumda VPN dizayn edilebilir ise / diğer bir hub bağlantı kurarak inşa ettiği SoftEther VPN Köprüsü veya SoftEther VPN Client ile SoftEther VPN Server ile birdir. 
+![](https://www.softether.org/@api/deki/files/100/=1-2-4.png?size=webview)![][17]
+
+*SoftEther VPN Server ve SoftEther VPN Köprüsü konumu.*
+
+### 2.2.3 SoftEther VPN Client
+
+#### SoftEther VPN Client Rolü
+
+SoftEther VPN Client, Sanal Ağ Adaptörü olarak işlev gören SoftEther VPN Server Sanal Hub'a bağlanabilir VPN istemci yazılımıdır.SoftEther VPN Client yüklü bir bilgisayar ile, kullanıcı sadece basit ayarlar ile internet üzerinden erişebilir ve Virtual Network Adaptörü ile SoftEther VPN Server Sanal Hub bağlanarak rastgele iletişim yapabilir.
+![](https://www.softether.org/@api/deki/files/101/=1-2-5.png?size=webview)
+![][18]
+
+*SoftEther VPN Client Sanal Hub'a VPN bağlantısı.*
+
+#### Sanal Ağ Adaptörü
+
+SoftEther VPN Client kullanıyorsanız, iletişim, Sanal Ağ Adaptörü oluşturarak işletim sistemi tanınan ve iletişim için tek bir ağ bağdaştırıcısı kullanan tüm uygulamalar tarafından yürütülmektedir. Dolayısıyla SoftEther VPN Client yüklü bir bilgisayar, bir uygulama için sanal ağ bağdaştırıcısı üzerinden VPN haberleşmesi yapabilir.
+![](https://www.softether.org/@api/deki/files/102/=1-2-6.png?size=webview)
+![][19]
+
+*Sanal Ağ Adaptörü.*
+
+#### Sanal Ağ Adaptörü ve Fiziksel Ağ Adaptörü arasında köprü
+
+Sanal Ağ Adaptörü işletim sistemi ve ağ bağdaştırıcısı arasında bir köprü işlevi varsa, tek bir ağ bağdaştırıcısı olarak işletim sistemi tarafından tanınan bir aygıt sürücüsü olarak uygulanır, çünkü sanal ağ bağdaştırıcısı ve fiziksel ağ bağdaştırıcısı arasındaki köprü bağlantısı mümkündür. Kaskad bağlantı ve yerel köprü SoftEther VPN Server ve SoftEther VPN Köprüsü için desteklenen olarak, bu yöntem SoftEther VPN üzerinde bu kadar çok kullanılmaz.
+
+### 2.2.4 SoftEther VPN Köprüsü
+
+#### SoftEther VPN Köprüsü Rolü
+
+SoftEther VPN Köprüsü uzak bir yerde çalışan SoftEther VPN Server'a bağlantı sağlar ve aynı zamanda SoftEther VPN Köprüsü çalışan bir fiziksel ağ adaptörü ve bilgisayar arasındaki katman 2 köprü bağlantısı olması VPN bağlantısı sağlayan bir yazılımdır. SoftEther VPN Bridge (diğer bir deyişle SoftEther VPN Server işletim Sanal Hub) SoftEther VPN sunucusu tarafından yapılandırılan VPN uzak bir konumda göbek LAN bağlantı köprü istiyorsanız hub LAN ile bağlı bilgisayara tanıtmak için en uygun yazılım olacaktır.
+![](https://www.softether.org/@api/deki/files/103/=1-2-7.png?size=webview)
+![][20]
+
+*SoftEther VPN Köprüsü uzak hub köprü bağlantısı.*
+
+#### SoftEther VPN Köprüsü ve SoftEther VPN Sunucu
+![](https://www.softether.org/@api/deki/files/104/=1-2-8.png?size=webview)
+![][21]
+
+*SoftEther VPN Server ve SoftEther VPN Köprüsü arasındaki fark.*
+
+### 2.2.4 SoftEther VPN Sunucu Yöneticisi
+
+SoftEther VPN Sunucu Yöneticisi yönetim modunda SoftEther VPN Server ve SoftEther VPN Köprüsü bağlanarak idare için grafik kullanıcı arayüzü (GUI) ile donatılmış bir yönetim aracıdır. 
+
+SoftEther VPN Sunucu Yöneticisi'ni kullanarak uzak bir yerden SoftEther VPN Server TCP / IP ve SoftEther VPN Köprüsü ile bağlanarak yönetimine olanak verir. SoftEther VPN Sunucu Yöneticisi ayrıca uygulama için bir bilgisayar terminalinde yükleyerek tek başına olarak kullanılabilir.
+
+SoftEther VPN Sunucu Yöneticisi, kullanıcı zor işletim prosedürü veya komut satırları ezberlemek zorunda değildir. İşlemleri fare tıklaması veya gerekli öğelerin klavye girişi ile gerçekleştirilir.
+![](https://www.softether.org/@api/deki/files/105/=1-2-9.png?size=webview)
+![][22]
+
+*SoftEther VPN Sunucu Yöneticisi.*
+
+ 
+
+### 2.2.5 SoftEther VPN Komut Satırı Yönetim Programı (vpncmd)
+
+SoftEther VPN komut satırı yönetimi programı (vpncmd) SoftEther VPN Server SoftEther VPN Client ve SoftEther VPN Köprüsü bağlanarak yönetimini gerçekleştirmek için bir komut kullanıcı arabirimi (CUI) yönetim aracıdır.
+
+Şu anda SoftEther VPN Server Manager Windows sürümü sunulmaktadır. vpncmd programlar SoftEther VPN Sunucu üzerinde çalıştığı halde tüm platformlar için sunulmaktadır. Böylece kullanılan platform ne olursa olsun aynı yöntemle yönetimi sağlanır.
+
+vpncmd tüm işlemleri komut girişi ile gerçekleştirilir. Vpncmd komutları ararken, toplu komut satırı komut otomatik işleme idam edilebilir bir komut satırı argümanı olarak kabul edilebilir ve işlem sonuçları bir dosyaya yazılabilir.
+![](https://www.softether.org/@api/deki/files/106/=1-2-10.png?size=webview)
+![][23]
+
+*SoftEther VPN komut satırı yönetimi programı (vpncmd).*
+
+### 2.3 VPN İşleme Prensibi ve Haberleşme Yöntemi\
+2.3.1 Konvansiyonel Ethernet Yapılandırma
+
+#### Anahtarlama Hub ve Ağ Adaptörü
+
+Ethernet birden çok bilgisayar birbirleri ile iletişim kurabilir. Bilgisayarlar, ancak ağ bağdaştırıcısı kullanan Ethernet bağlantısı için özel bir cihaz ve Ethernet fiziksel bağlanır
+
+Belirli açısından, bilgisayar bir "ağ kablosu" olarak adlandırılan fiziksel bir sinyal hattı ile Hub anahtarlama istenen Ethernet ağ adaptörü bağlanır.
+![](https://www.softether.org/@api/deki/files/107/=1-4-1.png?size=webview)
+![][24]
+
+*Ethernet için Hub ve ağ bağdaştırıcısı anahtarlama.*
+
+#### Mac adresi
+
+Ethernet katılan bilgisayarların birbirleriyle çoğaltma engellemek için kimlikleri ile iletişim kurması gerekir. Her ağ bağdaştırıcısı benzersiz 48-bit kimliği atanmıştır. Bu 48 bitlik kimliği "MAC adresi" olarak adlandırılır. Kural olarak, fiziksel ağ adaptörünün MAC adresi atanmış, bilgisayarlar tekrarını önlemek için oluşturulan son derece düşüktür.
+
+#### Ethernet üzerinden flow ile paket haberleşmesi
+
+Ethernet üzerinden akan iletişim paketleri genellikle "Ethernet çerçeveleri" ya da "MAC çerçeve Ethernet paketlerinin" olarak adlandırılır. Ethernet çerçeveleri çeşitli başlıkları ve aslında iletilen (payload) olan verileri içermektedir. Aşağıdaki dört madde Bunların en önemlileri şunlardır.
+![](https://www.softether.org/@api/deki/files/108/=1-4-2.png?size=webview)
+![][25]
+
+*Bir Ethernet çerçeve (MAC çerçeve).*
+
+#### Hub Mekanizması anahtarlama
+
+Ethernet (layer 2 anahtar) tarafından kullanılan anahtarlama Hub Ethernet tarafından bir ağ oluşturur ve iletişim için önemli bir çevresel cihazdır. Anahtarlama Hub birden çok bağlantı noktası vardır. Ağ kablosu ile Ethernet bilgi işlem bağlayarak bir fiziksel ağ, böylece katmanda 2 ile Ethernet iletişimi sağlayan anahtarlama Hub ve bilgisayarın ağ bağdaştırıcısı arasına bağlanır.
+![](https://www.softether.org/@api/deki/files/109/=1-4-3.png?size=webview)
+![][26]
+
+*anahtarlama*
+
+#### Ethernet Segmenti (Broadcast Domain)
+
+#### Cascade Bağlantı
+
+Tek bir birimi olmak üzere iki geçiş Hub yapılandırılmış iki segment bağlayan ve kullanma yöntemi, "çağlayan bağlantısı" olarak adlandırılır. Bağlantı sınırsız sayıda oluşabilir. Cascade Ethernet için kurulmuş bir fiziksel sınır aşılmadığı sağladı. Çağlayan bağlantısı ve kolayca yapılabilir olması Ethernet kullanmanın en büyük özelliklerinden biridir. port sayısı yetersiz hale geldiği için birbirleriyle geçiş Hub bağlantı çağlayan yaparak, mevcut bağlantı noktası sayısını artırmak ile olur ve ağa bağlı olan bilgisayar sayısını artırabilir.
+
+#### Köprü Bağlantı
+
+Köprü bağlantı çerçeveleri, fiziksel olarak iki ayrı Ethernet segmentler veya benzeri konfigürasyonun kaskad bağlantılı serbestçe değiştirilebilmesini sağlar.
+
+Kaskad bağlantı ve köprü bağlantısı teknik benzer bağlantı yöntemleri vardır, ancak kademeli bağlantı ise başından beri tek bir büyük segmenti oluşturmak için geçiş Hub bağlantı gösterir, köprü bağlantısı fiziksel olarak ayrı ayrı tatbik iki bölüm olarak kullanılacak ağları bağlayan anlamına gelir.
+
+ 
+
+### 2.3.2 Sanal Hub
+
+Bu bölümde Sanal Hub'ın kısa bir açıklamasını içerir. 
+
+#### Sanal Hub İşlevleri
+
+Sanal Hub SoftEther VPN en önemli işlevlerinden biridir. Sanal Hub yazılımı olarak Hub anahtarlama mevcut ortak bir tabaka 2 gibi işlevleri aynı seviyede uygular. Sanal Hub öğrenme temelli fonksiyon ve çerçeve değişimi / teslimat fonksiyonlarını öğrenmek için MAC adresi vardır. SoftEther VPN Sanal Hub ile donanım olarak bu işleme işlemek için kullanılan geleneksel anahtarlama Hub ise, işleme yazılımı olarak ele alınır.
+![](https://www.softether.org/@api/deki/files/110/=1-4-4.png?size=webview)
+![][27]
+
+*Sanal Hub arasında veya Sanal Ağ Adaptörleri arasındaki bağlantı.*
+
+#### Çoklu Sanal Hub oluşturulması ve Yönetim
+
+Birden fazla sanal Hub, tek bir VPN sunucusu içinde oluşturulduğunda, bu sanal Hub birbirleri ile iletişim kuramaz. Birden fazla sanal Hub oluşturulan Sonuç olarak, eğer birden fazla ethernet segmenti VPN Server içinde oluşmuş demektir.
+
+Geleneksel Ethernet fiziksel anahtarlama Hub aksine, SoftEther VPN Sanal Hub yerine ağ kablosu ile doğrudan bağlantı daha (Internet gibi) varolan bir IP ağı üzerinden TCP / IP tabanlı tünel protokolü (SoftEther VPN protokolü) ile bağlıdır. Diğer bir deyişle, ağ kablosu ile fiziksel bir anahtarlama Hub bağlı noktasına eşit bir sanal bağlantı noktası sadece ağ ile bağlı sanki gibi, SoftEther VPN protokolü ile VPN bağlantısını sağlayan sanal Hub'a bağlantı için standları sayede bir işlevi var başka bir bilgisayardan sanal bağlantı noktasına bağlayın.
+![](https://www.softether.org/@api/deki/files/111/=1-4-5.png?size=webview)
+![][28]
+
+*VPN Server içinde sanal Hub göre ayır ayırma.*
+
+#### Yönetim Birimi Rolü
+
+Daha önce belirtildiği gibi, SoftEther VPN protokolü tarafından uzak bir yerden Sanal Hub bağlanabilir, ancak bağlantı herkes tarafından izin verildiğinde, izin verilmeyen bir üçüncü taraf Sanal Hub bağlanabilirsiniz. Bu yönetici Sanal Hub bağlanabilir ve kimlik doğrulaması başarıyla sadece kullanıcılar (parola kimlik doğrulama veya sertifika kimlik doğrulaması ya kullanılabilir) kabul edilir ve böylece ayarlayabilirsiniz kullanıcıların tanımlar önlemek için. Varsayılan olarak tüm iletişim içeriğini izin ama paket filtrelemesi ve güvenlik politikası uygulamak, hem de sanal Hub içi iletişimi ile ilgili olarak, iletişimin bazı türleri bloke edilebilir.
+
+Bu ayar içerikleri her sanal Hub için tamamen bağımsızdır ve her yönetici ayrı ayrı idare böylece yönetim birimlerine ayrılmıştır.Tüm Sanal Hub yönetebilir geniş VPN Sunucular yöneticileri, ancak yalnızca yöneticiler bu sanal Hub yönetebilir VPN Server yöneticisi bazı Sanal Hub ile ilgili yetki verilmiş ve bu diğer sanal Hub yönetmek mümkün değildir.
+
+ 
+
+### 2.3.3 Sanal Ağ Adaptörü
+
+SoftEther VPN ile fiziksel bir Switch sanal Hub fark sanal yapılabilir. Benzer şekilde, bir fiziksel ağ bağdaştırıcısı Sanal Ağ Adaptörü gerçekleştirmek için yazılım tarafından sanal yapılabilir. Sanal Ağ Adaptörü, TCP / IP tabanlı SoftEther VPN protokolü tarafından bir ağ üzerinden uzak bir yerde SoftEther VPN Server içinde faaliyet Sanal Hub bağlanabilirsiniz.
+![](https://www.softether.org/@api/deki/files/112/=1-4-6.png?size=webview)
+![][29]
+
+*SoftEther VPN Sanal Ağ Adaptörü işletim sistemi tarafından bir ağ bağdaştırıcısı olarak tanıdı.*
+
+Sanal Ağ Adaptörü yazılım şu anda Windows ve Linux için bir SoftEther VPN Client olarak sunulmaktadır. SoftEther VPN Client yüklü bilgisayarlar VPN istemcisi olarak VPN sunucusu bağlayabilirsiniz. Çoklu Sanal Ağ Adaptörleri bir SoftEther VPN Client ayarı olarak bir istemci bilgisayar üzerinde oluşturulabilir. oluşturulan sanal ağ bağdaştırıcısı sadece hemen hemen herhangi bir iletişim uygulaması ile fiziksel ağ bağdaştırıcısı gibi bir ağ bağdaştırıcısı olarak kabul edilir, çünkü bir kural olarak, işletim sistemi üzerinde aracılığıyla VPN iletişim kurabilir, Ethernet iletişimi ve TCP / IP protokolünü destekleyen hemen hemen tüm ağ protokolleri çalıştıran Sanal Hub.
+![](https://www.softether.org/@api/deki/files/113/=1-4-7.png?size=webview)
+![][30]
+
+*Sanal Ağ Adaptörü Mülkiyet penceresi.*
+![](https://www.softether.org/@api/deki/files/114/=1-4-8.png?size=webview)
+![][31]
+
+*Sanal katman 3 anahtarı Sanal Hub arasında IP yönlendirme.*
+![](https://www.softether.org/@api/deki/files/115/=1-4-9.png?size=webview)
+![][32]
+
+*SoftEther VPN ile taban-to-base bağlantısı örneği.*
+![](https://www.softether.org/@api/deki/files/116/=1-4-10.png?size=webview)
+![][33]
+
+*Bilgisayardan bilgisayara VPN.*
+![](https://www.softether.org/@api/deki/files/117/=1-4-11.png?size=webview)
+![][34]
+
+*Uzaktan erişim VPN.*
+![](https://www.softether.org/@api/deki/files/118/=1-4-12.png?size=webview)
+![][35]
+
+*Sıradan ölçeğin Base-to-üs VPN.*
+![](https://www.softether.org/@api/deki/files/119/=1-4-13.png?size=webview)
+![][36]
+
+*Büyük ölçekli Base-to-üs VPN.*
+
+3. SOFTETHER VPN SUNUCU KILAVUZU
+================================
+
+SoftEther VPN Sunucusu yüksek performanslı, fonksiyonellik, güvenlik, ölçeklenebilirlik ve taşınabilirlik ile donatılmış VPN sunucusu yazılımıdır.
+
+SoftEther VPN Sunucusu SoftEther VPN sistemindeki en önemli yazılım ve Adından da anlaşılacağı gibi, uzak VPN istemcileri, VPN Köprüler ve böylece bir ağ üzerinden erişimi destekleyen bir VPN sunucusu gibi davranır.
+
+SoftEther VPN yazılımı herhangi bir formatta bir VPN gerçekleştirmek için kullanılan her Bu sunucu yüklü olmalıdır. SoftEther VPN Sunucu VPN Client ve VPN Köprüsü erişimi destekleyebilen tek olmasıdır.
+
+3.1 İşletim Modları
+-------------------
+
+Kullanıcı iki modda SoftEther VPN sunucusu çalışabilir: Servis Modu ve Kullanıcı Modu.
+
+### 3.1.1 Servis Modu
+
+Servis Modu normal çalışma modudur. Yükleme ve Servis modunda SoftEther VPN Sunucusu SoftEther VPN Server işletim sistemi bir parçası olarak arka planda çalışmasına neden olur .
+
+VPN Server Service modunda çalışırken, operasyon o anda işletim sistemi üzerine açık kullanıcılar tarafından bağlı olup olmadığını söyler.
+
+Servis Modunda VPN sunucusu kullanırken, VPN Server işleminin, genellikle sistem veya Root yetkisi üzerinde çalışılır.
+
+#### Servis modunda VPN Server Kurulumu
+
+Service Mode VPN sunucusu Windows sürümü yüklemek için yöntem diğer UNIX sürümlerinden farklıdır.
+
+-   Bir arka plan servisi olarak hizmet Modu ve otomatik çalışma başlatılması kurulum yükleyici sonuçlarından Windows sürümü SoftEther VPN Server Kurulumu. 
+
+-   Linux sürümü veya diğer UNIX sürümleri Servis Modunda SoftEther VPN sunucusu yüklemek için, bir süreç olarak sistemde kaydetmek için gereklidir. 
+
+#### SoftEther VPN Server Windows sürümü Servis Modu
+
+Servis modunda Windows sürümü VPN sunucusu yüklerken yükleyici kullanmak daha iyidir. Bu yöntem, otomatik olarak başlatılır ve müşteri tarafından herhangi bir özel operasyona gerek kalmadan VPN sunucusu çalışır. Sistem yeniden başlatıldığında bile, VPN Sunucusu otomatik olarak sistem start-up üzerine hizmet vermeye başlar. VPN Sunucusu bir arka plan görevi olarak başlatıldığınan, sunucunun yüklü olduğu bilgisayar sunucunun kurulumu farkında olmak zorunda istemci olmadan diğer görevler için de kullanılabilir.
+
+Windows sisteminde kayıtlı SoftEther VPN Sunucu hizmetinin kısaltılmış hizmet adı **"sevpnserver"** ve uzun hizmet adı **"SoftEther VPN Sunucu"** dır**.**
+
+Windos'ta SoftEther VPN Sunucusunu indirmek için vpnserver.exe'yi komut satırından aşağdaki şekilde komut girin. (Sistem Yöneticisi olmak gereklidir).
+
+  > &gt; Vpnserver / install
+  ----------------------------
+
+Zaten Windows sisteminizde yüklü olan SoftEther VPN Server'ı silmek için komut satırından aşağdaki şekilde komut girin. (Sistem Yöneticisi olmak gereklidir).
+
+  > &gt; Vpnserver / uninstall
+  ------------------------------
+
+**/ start** veya **/ stop** argümanları servis başlatma veya sona erdirme sağlar. Açık Başlangıç ​​türü tıklatarak, Hizmetler listesinden SoftEther VPN sunucusu seçerek el ile başlangıç ​​olarak Otomatik sunucuyu değiştirmek mümkündür. Başlangıç ​​türünü Elle olarak değiştirilmesi hizmet başlangıçta otomatik olarak başlamazsa, yönetici yetkisi bulunan bir kullanıcı tarafından başlatılana kadar çalışmaz anlamına gelir.
+
+**net start sevpnserver** komutu hizmeti başlatmak için ve **net stop sevpnserver** sonlandırmak için girilebilecek alternatif komutardır.
+
+ 
+![](https://www.softether.org/@api/deki/files/157/=3-2-1.png?size=webview)
+![][37]
+
+*SoftEther VPN Sunucu bir servis olarak kaydedilir.*
+
+#### UNIX Sürüm SoftEther VPN Server Servis Modu
+
+### 3.1.2 Kullanıcı Modu
+
+Kullanıcı Modu çalışma modunun özel bir türüdür. Kullanıcı Modu SoftEther VPN sunucusu işletim SoftEther VPN Sunucusu bir kullanıcı işlemi olarak arka planda çalışmasına neden olur. Kullanıcı Modunda SoftEther VPN sunucusu çalıştırmak için, bir kullanıcı olarak sistemde oturum başlatmak gereklidir. Operasyon işletim sistemine bağlı olarak farklılık gösterebilir.
+
+-   Windows işletim sistemi üzerinde kullanıcı modunda VPN sunucusu başlatmak kullanıcı oturum ve işlem kullanıcı oturumu kapattığında aynı anda sona erer sadece arka planda çalışan sunucu sürecine neden olur.
+
+-   VPN Server'ın sunucu işlemi o zaman bir çocuk süreç oluşturma ve arka planda, böylece kullanıcı oturumu süreçte ayrılmasını sağlayan o çalışan Öte yandan, UNIX işletim sistemi üzerinde kullanıcı modunda VPN sunucusu başlatılması neden olur. Sonuç olarak, VPN Server işlem kullanıcı oturumu kapattığında bile OS işletim kalır ve sistem kapatma veya yeniden başlatıldıktan sonra çalışmaya kadar devam edecektir.
+
+#### Windows sürüm SoftEther VPN Server Kullanıcı Modu
+
+Kullanıcı Modu Windows sürümü VPN sunucusu başlatmak için, eklemek **/ usermode**  vpnserver.exe yürütülebilir dosya seçeneği ve sonra başlatın.
+
+  &gt; Vpnserever / usermode
+  ----------------------------
+
+Başlatma tamamlandığında,bir simge görev tepsisinde görünür ve VPN sunucusu kullanıcı modunda başlatılmış olur. Bu modda, VPN Sunucu programı Kullanıcı Modunda faaliyet gösteren diğer uygulama programlarına benzer olarak genel kullanıcı yetkisi ile idam edilebilir şekilde faaliyet göstermektedir. Sistem Yöneticisi yetkili Kullanıcı Modu VPN sunucusu başlatmak için gerekli olmasnın nedeni budur. Ancak, VPN Sunucu süreci de kullanıcı oturumu kapattığında aynı anda sona erer
+![](https://www.softether.org/@api/deki/files/158/=3-2-2.png)
+![][38]
+
+*SoftEther VPN Server Kullanıcı Modu başlatıldığında..*
+
+Başlattıktan sonra Kullanıcı Modunu sonlandırmak için, sağ görev tepsisindeki ikona tıklayın ve SoftEther VPN sunucusu çıkışı seçin.
+
+Ayrıca, Hide ikonuna tıklayarak, ekranda simge gizlenir. VPN Server Kullanıcı Modu simge ekranında bir engel simgesi haline gelir Bu işlev kullanılabilir. Görev tepsisi simgesi gizli olduğunda VPN Sunucusu menüsünden sona erdirilemez, ancak, unutmayın. Bu durumda, Görev Yöneticisini açın ve vpnserver.exe işlemi sona erdirmek için Ctrl + Alt + Del tuşlarına basın. Kullanıcı Modu dahaki sefere vpnserver.exe başlatırken, görev tepsisi simgesi takarak restore edilebilir **/ usermode\_showtray** seçeneği.
+![](https://www.softether.org/@api/deki/files/159/=3-2-3.png)![][39]
+
+ 
+
+#### Unix Sürüm SoftEther VPN Server Kullanıcı Modu
+
+Linux dahil UNIX sistemlerinde kullanıcı modunda VPN sunucusu başlatmak için **start** ​ komutuyla vpnserver başlatın.
+
+  -----------------------------------------
+  > \$ ./vpnserver start
+  >
+  > SoftEther VPN Sunucu Hizmeti Başladı.
+  >
+  > \$
+  -----------------------------------------
+  -----------------------------------------
+
+Mesaj \[SoftEther VPN sunucusu hizmeti başladı.\] terminalde yazdıysa, bu VPN Server düzgün kullanıcı modunda başlatıldı anlamına gelir. O başlatıldıktan sonra VPN sunucusunu sonlandırmak için, **stop** argümanını kullanın ve aşağıdaki gibi komut girin.
+
+  ---------------------------------------
+  > \$ ./vpnserver stop
+  >
+  > SoftEther VPN Server Service durdu.
+  >
+  > \$
+  ---------------------------------------
+  ---------------------------------------
+
+UNIX VPN Sunucusu kullanıcı modunda başlatıldığında, sürecin işlediği kullanıcının yetki ile bir arka plan işlemi olur. Bu nedenle, vpnserver süreci kullanıcı oturum veya SSH bağlantısını keserse bile çalışmaya devam eder. Süreç sistem yeniden başlatılana kadar veya işlem zorla root tarafından sonlanana kadar çalışmaya devam eder.
+
+ Daemonizing ve UNIX işletim sistemlerinde vpnserver **vpnserver start**  şekilde kullanarak, sadece işletim sisteminin başlangıç ​​komut dosyasını çağırmak için talimat verir. Servis modunda VPN Server çalıştırmanın temelde hiçbir farkı yoktur bu yüzden, burada açıklanan prosedüre eşdeğer bir şey otomatik olarak Root yetkisi bulunan bir sistem tarafından gerçekleştirilir. 
+
+Aşağıda görüldüğü gibi, vpnserver süreci UNIX sürüm VPN sunucusu üzerinde iki aşamada başlatıldı. İlk olarak, birinci işlem adında execsvc bu süreci fork () sistem çağrısı kullanarak bir çocuk süreç oluşturur ve bu çocuk proses gerçek VPN işlem gerçekleştiren sonra bir arka plan işlemi olarak lanse edilir. Ana süreç sürekli çocuk süreç izler ve anormal hata oluşması durumunda, derhal işlemi sonlandırır ve kurtarma girişimi için yeniden başlatır. Aşağıdaki örnekte aslında farklı Linux veya diğer işletim sistemlerinde aynı görünmeyebilir böylece belirli bir Linux sistemi üzerinde çalışır. Buna ek olarak, eski Linux çekirdeği ile versiyonları durumunda birden çok işlem olarak birden çok iş parçacığı (yerli iş parçacığı ile uyumlu değildir, yani sürümleri), aşağıdaki örnekte daha fazla olabilir oluşturulan fiili vpnserver süreçleri ancak görüntülemek için bu bir ekran sorun ve çalışma normal aslında.
+
+  -----------------------------------------------------------------------------------
+  > \$ Ps auxf
+  >
+  > KULLANICI PID% CPU% MEM VSZ RSS TTY STAT BAŞLANGIÇ ZAMANI KOMUTANLIĞI
+  >
+  > neko 1549 0,0 0,8 5188 560? S &lt;Nov24 00:00 / tmp / vpnserver execsvc
+  >
+  > neko 0,0 4,0 11888 2520 1550? S &lt;Nov24 00:08 \\ \_ / tmp / vpnserver execsvc
+  -----------------------------------------------------------------------------------
+  -----------------------------------------------------------------------------------
+
+Bu, olay nadiren meydana gelmesine rağmen, Kullanıcı Modu başlatılan VPN sunucusu, donanım arızası olarak kontrolden çıktığında ve **vpnserver / stop** kullanarak durdurulabilinmesi mümkün olmadığında **kill-KILL** kullanarak ana prosese bir sinyal gönderir ve zorla sonlandırmaya çalışır. Sonra child prosesi zorla sonlandırmak için **kill-KILL** ile sinyal gönderir. Sisteme bağlı olarak, **Killall -KILL vpnserver** Tüm vpnserver işlemlerinin eş zamanlı olarak sona ermesi sağlayabilir.
+
+Ayrıca Vpnserver **TERM** sinyalini aldığında (normal sonlandırma isteği sinyali), düzgün sonlandırma işlemini gerçekleştirir.
+
+3.2 VPN Sunucu Yönetimi
+-----------------------
+
+SoftEther VPN sunucusu yönetmek için Operasyonlar iki ana tipe ayrılır. Biri VPN Server genel uygulama içindir diğeri ise VPN Server içinde belirli Sanal Hub uygulaması içindir. Burada ilk tüm VPN sunucusu yönetmek için gerekli know-how ve taşıma yöntemlerini açıklar.
+
+### 3.2.1 SoftEther VPN Sunucusu ve Sanal Hub
+
+Çoklu Sanal Hub SoftEther VPN Server oluşturulabilir. Her sanal Hub bağımsız katman 2 segmente sahiptir ve başkalarıyla iletişim yeteneği yoktur. Ayrıca, kullanıcı doğrulama odaklı kullanıcı kimlik doğrulama veritabanı ve erişim listesi, güvenilen sertifika listesi, RADIUS sunucusu ayarlarını SecureNAT ayarları ve kaskad bağlantı ayarlarını Sanal Hub birimleri tarafından yönetilen ve tamamen birbirinden bağımsızdır. Sanal Hub ayarlarında yapılan değişiklikler diğer herhangi bir sanal Hub çalışması üzerine herhangi bir etkisi yoktur.
+![](https://www.softether.org/@api/deki/files/160/=3-3-1.png?size=webview)
+![][40]
+
+*VPN Sunucu, Sanal Hub ve ayarları her hub tarafından verileri tutulabilir.*
+
+### 3.2.2 Yönetim Araçları & Uzaktan Yönetim
+
+SoftEther VPN Server Administration SoftEther VPN Sunucu Yöneticisi anlatılan kullanılarak gerçekleştirilir. Yönetim oturumları için VPN sunucusu bağlantı yerel veya uzak bir bilgisayardan mümkündür ve VPN Sunucu Internet'e bağlıysa, o zaman VPN Server yönetim bağlantısı ve uzaktan yönetim dünyanın her yerinden gelen teorik olarak mümkündür.
+
+VPN komut satırı yönetimi programı (vpncmd) CUI uygulama için uygun ise SoftEther VPN Sunucu Yöneticisi, GUI uygulama için uygundur. Bunların dışında iki araçlardan gelen, başka hiçbir yarar VPN Server gün-gün uygulama için gereklidir.
+![](https://www.softether.org/@api/deki/files/161/=3-3-2.png?size=webview)
+![][41]
+
+*VPN Sunucu & VPN Köprüsü yönetmek için yöntemler.*
+
+### 3.2.3 Yönetim Otoritesi
+
+bağlanmak ve Yönetim modunda VPN Server yönetmek için yönetim otoritesinin iki türü vardır.
+
+#### Tüm SoftEther VPN Server Administration Kurumu
+
+Tüm SoftEther VPN Server Administration yetki sunucu bilgisayarı yönetmekten sorumlu kişiler tarafından yapılmalıdır. Bu yetki mümkün, tüm VPN Sunucu öğelerin ayarlarını değiştirmek, yeni sanal Hub oluşturabilir, mevcut Sanal Hub yönetmek ve tüm mevcut Sanal Hub ve burada yer alan nesneleri silmek için yapar. Bu nedenle, tüm SoftEther VPN Server yönetim otoritesi çok önemli ve ortak bir bilgisayar Root yetkisi / Yöneticiler otorite eşdeğer dikkatle tedavi edilmelidir. Bir sunucu bilgisayardaki VPN sunucusu kurarken, tüm VPN Server yönetim yetkisini tutmak için sunucu bilgisayarın işletim sistemi için yönetim otoritesi ile yönetici için en iyisidir.
+
+Tüm VPN Server yönetim otoritesi bir şifre ile korunmaktadır. Bu şifreyi VPN sunucusu yükledikten sonra hemen değiştirmenizi öneririz başlangıçta boştur (Dipnot: Mevcut yükleyici yükleme sırasında parola ayarlamak için bir pencere görüntüler). Ayarlanmış Yönetici şifresi bir şifre ayarı isteyen bir ileti kutusu görüntüler VPN Sunucu Yöneticisi kullanılarak VPN Server'a bağlanırken, bu yüzden \[Evet\] tıklayın ve hemen şifre koyun. VPN Server ayarlanan bir parola, bir Windows ya da UNIX sunucu üzerindeki bir Yönetici parolası olarak aynı derecede güvenliğe sahiptir. Artık VPN Sunucu Yönetici parolasının karma olduğuna emin olabilirsiniz ve daha sonra kaydedilen şifresiz metin olarak restore edilir.
+
+Genel VPN Sunucu şifresini değiştirmek için, VPN Sunucu Yöneticisi'nde \[Şifreleme ve iletişim ayarları\] tıklayın, ardından \[Yönetici parolası\] tıklayın ve görüntülenen metin kutusuna iki kez yeni şifreyi girin. Vpncmd yardımcı programı, parola komutu kullanılarak ayarlanabilir **\[ServerPasswordSet\]** .
+![](https://www.softether.org/@api/deki/files/162/=3-3-3.png?size=webview)
+![][42]
+
+*VPN Sunucu şifresini değiştirme.*
+
+### 3.2.4 SSL Sertifikaları
+
+Bir X.509 sertifikası SoftEther VPN Server sunucu sertifikası (SSL sertifikası) olarak ayarlanabilir. Bu sunucu sertifikası kullanarak sunucu kimlik doğrulaması gerçekleştirmek için VPN sunucusuna bağlanmak için çalışırken, VPN istemci bilgisayarları sağlar.
+
+X.509 sertifika ve özel anahtar VPN Server tarafından müşteriye sunulacak belirlemek için, VPN Sunucu Yöneticisi'nde \[Şifreleme ve iletişim ayarları\] tıklayın, ardından \[Import sertifikası\] tıklayın. Aynı görev komutunu kullanarak vpncmd programı yapılabilir **\[ServerCertSet\]** . SSL Sunucu Sertifikası ayarlandıktan sonra, tüm VPN Server Yönetici belgesi verilerini ve özel anahtar veri verebilirsiniz.
+
+Sertifika erişimi kez set düzgün kullanılıp kullanılmadığını kontrol etmek için **dinleyici bağlantı noktası numarasını /: // sunucu ip adresi: https** web tarayıcısı ve sertifika düzgün tarafından tanınan tarayıcı olup olmadığını teyit edin.
+![](https://www.softether.org/@api/deki/files/163/=3-3-4.png?size=webview)
+![][43]
+
+*X.509 sertifikası web tarayıcısı üzerinden bağlantı kurulduğunda, VPN Server sergiledi.*
+
+### 3.2.5 Dinleyici Limanlar
+
+SoftEther VPN Sunucusu birden çok TCP / IP portları sonra Internet veya diğer IP ağı üzerinden bu bağlantı noktasına sahip bir VPN bağlantısı ve VPN oturumu kurabilir bekleme ve VPN istemci bilgisayarlara ayarlanmalıdır sağlar. önceden dinleyici bağlantı noktalarını kaydetmek için VPN Sunucu Yöneticisi için gerekli olmasının nedeni budur.
+
+Başlangıçta, üç TCP / IP bağlantı noktası numaraları **443, 992 ve 5555**  dinleyici bağlantı noktaları gibi VPN Server tahsis edilir.Sistem kaynaklarını kadar dinleyici kapıları eklenebilir sağlarken, tipik haliyle, bir ya da iki bağlantı noktası yeterlidir.
+
+Biz VPN herhangi bir sakınca var Server ve liman hiçbir bağlanmak için TCP / IP bağlantı noktası 5555 kullanmanızı öneririz.sadece web ya da diğer kısmi protokol geçmesine izin veren bir güvenlik duvarı veya proxy sunucusu var 443. Port no. 443 https protokolü için bir liman, yani bu port üzerinden SSL iletimi gerçekleştirirken genellikle bile sıkı güvenlik ayarlarıyla ağlarda geçişini sağlar. Bu arada, 992 bugün pratikte kullanılmayan ve (genellikle proxy sunucular üzerinden geçemezse rağmen) en güvenlik duvarları üzerinden geçebilir SSL (telnets) protokolü üzerinde TELNET için bir bağlantı noktası numarasıdır. Birkaç dinleyici portları kayıt ve daha sonra (durumunu askıya) bazıları devre dışı bırakmak da mümkündür.
+
+Etkinleştirmek veya dinleyici bağlantı noktalarını devre dışı, \[Oluştur\], \[Delete\] üzerine tıklayın, ekleme, silme, \[Başlat\] veya VPN Server at \[dur\] \[Dinleyiciler Yönetimi\] yönetin. Vpncmd yardımcı olarak, aynı işlemleri kullanılarak gerçekleştirilebilir**\[ListenerCreate\]** , **\[ListenerDelete\]** , **\[ListenerList\]** , **\[ListenerEnable\]** veya **\[ListenerDisable\]** komutlar.
+
+ 
+![](https://www.softether.org/@api/deki/files/164/=3-3-5.png)
+![][44]
+
+*Dinleyiciler pencerenin Yönetimi.*
+
+### 3.2.6 Yapılandırma Dosyası
+
+SoftEther VPN Server, bellek içinde tüm ayarlar ayrıntıları korur ve aynı anda disk ayarları dosyalarına kaydeder. Bu ayarlar dosyası Yapılandırma dosyası veya Yapılandırma dosyası ya denir.
+
+Yapılandırma dosyası Windows registry dosyalarını ve UNIX ayarları dosyalarına çok benzer. Dosya çift özellikler, UNIX ayarları dosyaları gibi bir metin editörü ile doğrudan düzenlenebilir Windows kayıt defteri dosyaları ve yapının benzer yani bir ağaç gibi veri yapısı ile mükemmel bir konfigürasyon verileri biçimi vardır.
+
+#### Yapılandırma dosyası Rolü
+
+Konfigürasyon dosyası dosya adı altında oluşturulan **"vpn\_server.config"**  VPN sunucusu süreçlerin çalıştırılabilir dosyaları içeren aynı dizinde bulunur. VPN Sunucu ayarları değişti veya kendi iç yapısal veri değiştirildiğinde her Yapılandırma dosyası her zaman kaydedilir (dosya, disk erişimi sayısını azaltmak için çalışan nedeniyle disk önbelleğine hemen kaydedilmemiş olabilir lütfen unutmayın). VPN Sunucusu içeriği, önce fesih kendi değerlerine döner söyledi dayalı, durur ve bir dahaki sefere önyükleme zaman, vpn\_server.config dosyanın içeriğini okur ve. Kapatma meydana dediğinde Yapılandırma dosyası, bu nedenle olursa olsun, VPN Server'ın yapısal veriler kapatma öncesinde olduğu nasıl başlatılması üzerine restore edilecek sağlar. Yapılandırma dosyası VPN Sunucusu başlattı diskte yoksa, varsayılan ayarları uygulanır. Aşağıdaki gibi varsayılan ayarlardır.
+
+-   Adında bir sanal Hub **"DEFAULT"** oluşturulur. Kullanıcı nesneleri, grup nesneleri veya başka herhangi bir nesne Sanal Hub içinde yoktur ve tüm ayarları varsayılan olanları (yani yeni oluşturulan sanal Hub ayarları) bulunmaktadır.
+
+-   Üç dinleyici bağlantı noktaları, sayılar 443, 992 ve 5555, kayıtlıdır.
+
+-   Yerel köprü ve sanal katman 3 switch tanımları kayıtlı değil.
+
+-   Bir sunucu sertifikası otomatik olarak rasgele sayılar kullanılarak oluşturulur.
+
+-   Internet bağlantısı canlı tutma işlevin varsayılan değerleri ayarlanır.
+
+SoftEther VPN Köprüsü için yapılandırma dosyası olarak adlandırılır **"vpn\_bridge.config"**  ve varsayılan olarak oluşturulan sanal Hub adlı **"KÖPRÜ"** .
+
+-   uygulamak için de gereklidir.
+
+#### Bir yapılandırma dosyası örneği
+
+Aşağıda VPN Server Configuration dosyası gerçek bir örneğidir. ağaç gibi veriler "kök" adı verilen ağaç benzeri bir yapı en sırayla metin biçiminde, bu şekilde tatbik edilmektedir.
+
+> \# Yazılım Yapılandırma Dosyası
+>
+> \#
+>
+> Program çalışmadığında \# bu dosyayı düzenleyebilirsiniz.
+>
+> \#
+>
+> kök beyan
+>
+> {
+>
+> uint ConfigRevision 1
+>
+> bool yanlış IPsecMessageDisplayed
+>
+> bool yanlış VgsMessageDisplayed
+>
+> DDnsClient beyan
+>
+> {
+>
+>   bool Engelli yanlış
+>
+>   Bayt Ki anahtarı / 0ARfOguxYuFAwum5NkqtTNiI =
+>
+>   dize LocalHostname PC26
+>
+>   dize ProxyHostName \$
+>
+>   uint proxyport 0
+>
+>   uint proxyType 0
+>
+>   dize ProxyUsername \$
+>
+> }
+>
+> IPsec beyan
+>
+> {
+>
+>   bool EtherIP\_IPsec yanlış
+>
+>   dize IPsec\_Secret vpn
+>
+>   dize L2TP\_DefaultHub DEFAULT
+>
+>   bool L2TP\_IPsec yanlış
+>
+>   bool L2TP\_Raw yanlış
+>
+>   EtherIP\_IDSettingsList beyan
+>
+>   {
+>
+>   }
+>
+> }
+>
+> ListenerList beyan
+>
+> {
+>
+>   Listener0 beyan
+>
+>   {
+>
+>    bool DisableDos yanlış
+>
+>    bool true Etkin
+>
+>    uint Liman 443
+>
+>   }
+>
+>   Listener1 beyan
+>
+>   {
+>
+>    bool DisableDos yanlış
+>
+>    bool true Etkin
+>
+>    uint Liman 992
+>
+>   }
+>
+>   Listener2 beyan
+>
+>   {
+>
+>    bool DisableDos yanlış
+>
+>    bool true Etkin
+>
+>    uint Limanı 1194
+>
+>   }
+>
+>   Listener3 beyan
+>
+>   {
+>
+>    bool DisableDos yanlış
+>
+>    bool true Etkin
+>
+>    uint Limanı 8888
+>
+>   }
+>
+> }
+>
+> LocalBridgeList beyan
+>
+> {
+>
+>   bool EnableSoftEtherKernelModeDriver gerçek
+>
+>   bool ShowAllInterfaces yanlış
+>
+> }
+>
+> ServerConfiguration beyan
+>
+> {
+>
+>   UInt64 AutoDeleteCheckDiskFreeSpaceMin 8589934592
+>
+>   uint AutoSaveConfigSpan 300
+>
+>   bool true BackupConfigOnlyWhenModified
+>
+>   dize CipherName RC4-MD5
+>
+>   uint 8996 CurrentBuild
+>
+>   bool DisableDeadLockCheck yanlış
+>
+>   bool DisableDosProction yanlış
+>
+>   bool DisableIntelAesAcceleration yanlış
+>
+>   bool DisableIPv6Listener yanlış
+>
+>   bool DisableNatTraversal yanlış
+>
+>   DisableOpenVPNServer yanlış bool
+>
+>   DisableSSTPServer yanlış bool
+>
+>   bool DontBackupConfig yanlış
+>
+>   bool yanlış EnableVpnAzure
+>
+>   bool EnableVpnOverDns yanlış
+>
+>   bool EnableVpnOverIcmp yanlış
+>
+>   bayt HashedPassword + WzqGYrR3VYXrAhKPZLGEHcIwO8 =
+>
+>   dize KeepConnectHost keepalive.se2.softether.com
+>
+>   uint KeepConnectInterval 50
+>
+>   uint KeepConnectPort 80
+>
+>   uint KeepConnectProtocol 1
+>
+>   uint MaxConnectionsPerIP 256
+>
+>   uint MaxUnestablishedConnections 1000
+>
+>   bool NoDebugDump yanlış
+>
+>   bool NoHighPriorityProcess yanlış
+>
+>   bool NoSendSignature yanlış
+>
+>   dize OpenVPN\_UdpPortList 1194
+>
+>   bool SaveDebugLog yanlış
+>
+>   bayt ServerCert MIIC6DCCAdACAQAwDQYJKoZIhvcNAQEFBQAwOjENMAsGA1UEAxMEUEMyNjENMAsGA1UEChMEUEMyNjENMAsGA1UECxMEUEMyNjELMAkGA1UEBhMCVVMwHhcNMTMwMzAyMDcxMjMzWhcNMzYxMjMxMDcxMjMzWjA6MQ0wCwYDVQQDEwRQQzI2MQ0wCwYDVQQKEwRQQzI2MQ0wCwYDVQQLEwRQQzI2MQswCQYDVQQGEwJVUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKozS1U1Yr3f1wceckua4LLHBLjDuSYQZ3wjfjixzolURxPP8F2L0T7j4F2QOwu+ZFCwT04FpcW8JVx6K3oij+IeYMYWA5mX7MHZHjnMLAQ8oCNV4O5Kju3T2HBGKpGugooYu9GRwPrWx0KiM+SsD3Ifv3KwWPGCwYx9t7Jed4x4Z41cDZH78mdxFFmoyvG4rj78N8L0KofhRhRA0FppBl01tvBsz3faZSbcVE5k0SKvN+CgPgJ4talPzyiHlrP/NKZ7xqJYH7oWbiYtgWX+oFCJ64JKjIgfm11ExYr6NSORzQBfA2YGF+a3NoWWIO3XLH0/6CaYFTlASlvW+UP1BokCAwEAATANBgkqhkiG9w0BAQUFAAOCAQEAKky/5DgXQa3FRTuwO762EVBIX+HJUaRLtJV0sUGnqNFQDjq37fa5CkV2tk0Vw5FrHvnPzVQrWISf0QEcNuDIvunI7PcCpFRixOq0fv4d4vXVs8Qm5iGYyD7U2ZycN/Jb/XYo5kbaOan+0q8ngekjuWtNigUYGetrds+xiFRQhfOUwTgPTVMW3akd+8ynv5rE/259j5zWTosmz09oiRlXFMwUJt/vNyAt6htlclfoDb/jP05uZFzCjMHjcf36XhfgnR41qoN4tmgkfEB2kibW0AGnydOkXnp73yB7ueZKPM3YHNJXfdCkids9xZc6p3AfxQVR6bfQ/OOviniFgH8PYQ==
+>
+>   bayt ServerKey MIIEpQIBAAKCAQEAqjNLVTVivd/XBx5yS5rgsscEuMO5JhBnfCN+OLHOiVRHE8/wXYvRPuPgXZA7C75kULBPTgWlxbwlXHoreiKP4h5gxhYDmZfswdkeOcwsBDygI1Xg7kqO7dPYcEYqka6Cihi70ZHA+tbHQqIz5KwPch+/crBY8YLBjH23sl53jHhnjVwNkfvyZ3EUWajK8biuPvw3wvQqh+FGFEDQWmkGXTW28GzPd9plJtxUTmTRIq834KA+Ani1qU/PKIeWs/80pnvGolgfuhZuJi2BZf6gUInrgkqMiB+bXUTFivo1I5HNAF8DZgYX5rc2hZYg7dcsfT/oJpgVOUBKW9b5Q/UGiQIDAQABAoIBAQCe+IwriVKyIMn6N0DwRzgLJALQBNgBqp7N/2Tc1Y8hDBvbcISFC5wkzrl5Csdr36hZCWT5biL5PxPyfZXwXSnhPRiMzHEOXC3incYym/ac+ndkqckPKYq4rv9hVthZ/BKnpBSB2U7TvBqfrVslAmTm5qpuGDLrWYMokyAqNTwacbHkJ6O7yA5shKH3IUOjWYQaF93JTr4q+KHOFPUaS4+pzAy6ubV1Shy4FbLyZ9+4g/sdPlRuDuGWM5HpG/rypvgB0/d6jPrLMR9qxeihdVsshAbgq9RAqYjOpqQSeH504eZJIg2TGsTbcVU/RdvJhXS4uXbBdJQvCYe/Yk1HhWpFAoGBANPfXtgW/8FC+hUfOILFoYm7rT5yGjhNW6fSsbQSIaGKU2vca19NqVxhzqdTPNsmAWCn7oDQBmUvycPXkamfiRytiyirho3nmkc5de1vvek9gLP9mfO9k+3LveURT6fKOOz/3J6adn5V7wEzTFvmYTy0BMiG1tsHEOI3iUmDka0XAoGBAM2mC4dpGEuBDXFGj8Uislwso26pQUNxPdqeKAMa3MvHFDvirPrAeTv7rsQ+6l/eRrx/LYf3JrLvGEelB7EFpgnzXG9ZG+nnv0j4w7EfTwcjKmRX8UCxXJ5smvGeBwGsTVtUDdoT7DV3NjhfMZjEqKCJ0RRpgMHepxqm1eU1RW1fAoGAMei2YNTaHl52pq8aEsQXT2ikYMdkIcsnQhtBvRdgULtS91+O835J3Pc1RPk4pq8HOAuXBUT7nK5rKvUG3Rw1oknHNCdjpN3f29NPUkU2SVExljSxJVeNF0EdVG6FgxMB4eJLyBi+vPflOzUoUaWtVi1ZyxroVeQOOBu4/VY+5LUCgYEAldWzdLfH8ctXhf8JZXMATVRgx5IecQsjLBQrxwdddEPapD9mFVUDgAbCsU296pfDJjfrbrNOyPSX1iuRzRL2hS2BXcepJOWrY3mM65KKPAMNMgs5Rg90EiHDSuP+6uMlgbNeXFRDuDjhknUZZ9txmXaQlbTBEYAudKa2FciYizUCgYEAsk5gyOSatourftMSP62MVQ7amyHDTVtvNuCbZX78OH3ejmzRw1pl6eDqCGo68i4Swu41RFr+K0c1sF119rwD+Z8rNjOhnFkYJ43WC4NspfCdKa9ZTXFkJxdeBQFD89HNFbDabqQE1ay1qIWB44wt95aNbHzXl0eBGgN7/o/8ehg=
+>
+>   uint SunucuTürü 0
+>
+>   bool UseKeepConnect gerçek
+>
+>   bool UseWebTimePage yanlış
+>
+>   bool UseWebUI yanlış
+>
+>   ServerTraffic beyan
+>
+>   {
+>
+>    RecvTraffic beyan
+>
+>    {
+>
+>     UInt64 BroadcastBytes 0
+>
+>     UInt64 BroadcastCount 0
+>
+>     UInt64 UnicastBytes 0
+>
+>     UInt64 UnicastCount 0
+>
+>    }
+>
+>    SendTraffic beyan
+>
+>    {
+>
+>     UInt64 BroadcastBytes 0
+>
+>     UInt64 BroadcastCount 0
+>
+>     UInt64 UnicastBytes 0
+>
+>     UInt64 UnicastCount 0
+>
+>    }
+>
+>   }
+>
+>   SyslogSettings beyan
+>
+>   {
+>
+>    dize Anabilgisayaradı \$
+>
+>    uint Liman 0
+>
+>    uint SaveType 0
+>
+>   }
+>
+> }
+>
+> VirtualHUB beyan
+>
+> {
+>
+>   DEFAULT beyan
+>
+>   {
+>
+>    UInt64 CreatedTime 1362175953422
+>
+>    bayt HashedPassword + WzqGYrR3VYXrAhKPZLGEHcIwO8 =
+>
+>    UInt64 LastCommTime 1362175953408
+>
+>    UInt64 LastLoginTime 1362175953408
+>
+>    uint NumLogin 0
+>
+>    bool Çevrimiçi gerçek
+>
+>    uint RadiusRetryInterval 0
+>
+>    uint RadiusServerPort 1812
+>
+>    dize RadiusSuffixFilter \$
+>
+>    Bayt SecurePassword bpw3X / O5E8a6G6ccnl4uXmDtkwI =
+>
+>    uint Tip 0
+>
+>    AccessList beyan
+>
+>    {
+>
+>    }
+>
+>    AdminOption beyan
+>
+>    {
+>
+>     uint allow\_hub\_admin\_change\_option 0
+>
+>     uint deny\_bridge 0
+>
+>     uint 0 deny\_change\_user\_password
+>
+>     uint 0 deny\_empty\_password
+>
+>     uint deny\_hub\_admin\_change\_ext\_option 0
+>
+>     uint deny\_qos 0
+>
+>     0 deny\_routing uint
+>
+>     uint max\_accesslists 0
+>
+>     uint 0 max\_bitrates\_download
+>
+>     uint 0 max\_bitrates\_upload
+>
+>     uint max\_groups 0
+>
+>     uint max\_multilogins\_per\_user 0
+>
+>     uint max\_sessions 0
+>
+>     uint max\_sessions\_bridge 0
+>
+>     uint max\_sessions\_client 0
+>
+>     max\_sessions\_client\_bridge\_apply 0 uint
+>
+>     uint MAX\_USERS 0
+>
+>     no\_access\_list\_include\_file 0 uint
+>
+>     uint no\_cascade 0
+>
+>     uint no\_change\_access\_control\_list 0
+>
+>     uint no\_change\_access\_list 0
+>
+>     uint no\_change\_admin\_password 0
+>
+>     uint no\_change\_cert\_list 0
+>
+>     uint no\_change\_crl\_list 0
+>
+>     uint no\_change\_groups 0
+>
+>     uint no\_change\_log\_config 0
+>
+>     uint no\_change\_log\_switch\_type 0
+>
+>     uint no\_change\_msg 0
+>
+>     uint no\_change\_users 0
+>
+>     uint 0 no\_delay\_jitter\_packet\_loss
+>
+>     uint 0 no\_delete\_iptable
+>
+>     uint 0 no\_delete\_mactable
+>
+>     uint no\_disconnect\_session 0
+>
+>     uint no\_enum\_session 0
+>
+>     uint no\_offline 0
+>
+>     uint no\_online 0
+>
+>     uint no\_query\_session 0
+>
+>     no\_read\_log\_file 0 uint
+>
+>     0 no\_securenat uint
+>
+>     uint no\_securenat\_enabledhcp 0
+>
+>     0 no\_securenat\_enablenat uint
+>
+>    }
+>
+>    CascadeList beyan
+>
+>    {
+>
+>    }
+>
+>    LogSetting beyan
+>
+>    {
+>
+>     uint PacketLogSwitchType 4
+>
+>     uint PACKET\_LOG\_ARP 0
+>
+>     uint PACKET\_LOG\_DHCP 1
+>
+>     uint PACKET\_LOG\_ETHERNET 0
+>
+>     uint PACKET\_LOG\_ICMP 0
+>
+>     uint PACKET\_LOG\_IP 0
+>
+>     uint PACKET\_LOG\_TCP 0
+>
+>     uint PACKET\_LOG\_TCP\_CONN 1
+>
+>     uint PACKET\_LOG\_UDP 0
+>
+>     bool SavePacketLog gerçek
+>
+>     bool SaveSecurityLog gerçek
+>
+>     uint SecurityLogSwitchType 4
+>
+>    }
+>
+>    Mesaj beyan
+>
+>    {
+>
+>    }
+>
+>    Seçeneği ilan
+>
+>    {
+>
+>     uint AccessListIncludeFileCacheLifetime 30
+>
+>     uint AdjustTcpMssValue 0
+>
+>     bool yanlış ApplyIPv4AccessListOnArpPacket
+>
+>     uint BroadcastStormDetectionThreshold 0
+>
+>     uint 0 ClientMinimumRequiredBuild
+>
+>     bool DisableAdjustTcpMss yanlış
+>
+>     bool DisableCheckMacOnLocalBridge yanlış
+>
+>     bool DisableCorrectIpOffloadChecksum yanlış
+>
+>     bool yanlış DisableHttpParsing
+>
+>     bool yanlış DisableIPParsing
+>
+>     bool yanlış DisableKernelModeSecureNAT
+>
+>     bool DisableUdpAcceleration yanlış
+>
+>     bool DisableUdpFilterForLocalBridgeNic yanlış
+>
+>     bool yanlış DisableUserModeSecureNAT
+>
+>     bool FilterBPDU yanlış
+>
+>     bool FilterIPv4 yanlış
+>
+>     bool FilterIPv6 yanlış
+>
+>     bool FilterNonIP yanlış
+>
+>     bool FilterOSPF yanlış
+>
+>     bool FilterPPPoE yanlış
+>
+>     bool ManageOnlyLocalUnicastIPv6 gerçek
+>
+>     bool ManageOnlyPrivateIP gerçek
+>
+>     uint MaxSession 0
+>
+>     bool yanlış NoArpPolling
+>
+>     bool NoDhcpPacketLogOutsideHub gerçek
+>
+>     bool NoEnum yanlış
+>
+>     bool NoIpTable yanlış
+>
+>     bool NoIPv4PacketLog yanlış
+>
+>     bool yanlış NoIPv6AddrPolling
+>
+>     bool NoIPv6DefaultRouterInRAWhenIPv6 gerçek
+>
+>     bool NoIPv6PacketLog yanlış
+>
+>     bool yanlış NoLookBPDUBridgeId
+>
+>     bool NoMacAddressLog gerçek
+>
+>     bool yanlış NoManageVlanId
+>
+>     bool NoSpinLockForPacketDelay yanlış
+>
+>     bool RemoveDefGwOnDhcpForLocalhost gerçek
+>
+>     uint RequiredClientId 0
+>
+>     uint SecureNAT\_MaxDnsSessionsPerIp 0
+>
+>     uint SecureNAT\_MaxIcmpSessionsPerIp 0
+>
+>     uint SecureNAT\_MaxTcpSessionsPerIp 0
+>
+>     uint SecureNAT\_MaxTcpSynSentPerIp 0
+>
+>     uint SecureNAT\_MaxUdpSessionsPerIp 0
+>
+>     dize VlanTypeId 0x8100
+>
+>     bool yanlış YieldAfterStorePacket
+>
+>    }
+>
+>    SecureNAT beyan
+>
+>    {
+>
+>     bool Engelli gerçek
+>
+>     bool SaveLog gerçek
+>
+>     VirtualDhcpServer beyan
+>
+>     {
+>
+>      dize DhcpDnsServerAddress 192.168.30.1
+>
+>      dize DhcpDnsServerAddress2 0.0.0.0
+>
+>      dize DhcpDomainName sec.softether.co.jp
+>
+>      bool true DhcpEnabled
+>
+>      uint DhcpExpireTimeSpan 7200
+>
+>      dize DhcpGatewayAddress 192.168.30.1
+>
+>      Dize DhcpLeaseIPEnd 192.168.30.200
+>
+>      Dize DhcpLeaseIPStart 192.168.30.10
+>
+>      Dize DhcpSubnetMask 255.255.255.0
+>
+>     }
+>
+>     VirtualHost beyan
+>
+>     {
+>
+>      dize VirtualHostIp 192.168.30.1
+>
+>      Dize VirtualHostIpSubnetMask 255.255.255.0
+>
+>      dize VirtualHostMacAddress 00-AC-21-11-37-CB
+>
+>     }
+>
+>     VirtualRouter beyan
+>
+>     {
+>
+>      bool true NatEnabled
+>
+>      uint NatMtu 1500
+>
+>      uint NatTcpTimeout 1800
+>
+>      uint NatUdpTimeout 60
+>
+>     }
+>
+>    }
+>
+>    SecurityAccountDatabase beyan
+>
+>    {
+>
+>     CertList beyan
+>
+>     {
+>
+>     }
+>
+>     CrlList beyan
+>
+>     {
+>
+>     }
+>
+>     GroupList beyan
+>
+>     {
+>
+>     }
+>
+>     IPAccessControlList beyan
+>
+>     {
+>
+>     }
+>
+>     userlist beyan
+>
+>     {
+>
+>     }
+>
+>    }
+>
+>    Trafik beyan
+>
+>    {
+>
+>     RecvTraffic beyan
+>
+>     {
+>
+>      UInt64 BroadcastBytes 0
+>
+>      UInt64 BroadcastCount 0
+>
+>      UInt64 UnicastBytes 0
+>
+>      UInt64 UnicastCount 0
+>
+>     }
+>
+>     SendTraffic beyan
+>
+>     {
+>
+>      UInt64 BroadcastBytes 0
+>
+>      UInt64 BroadcastCount 0
+>
+>      UInt64 UnicastBytes 0
+>
+>      UInt64 UnicastCount 0
+>
+>     }
+>
+>    }
+>
+>   }
+>
+> }
+>
+> VirtualLayer3SwitchList beyan
+>
+> {
+>
+> }
+>
+> VPNGate beyan
+>
+> {
+>
+>   dize Kötüye \$
+>
+>   bool yanlış IsEnabled
+>
+>   bool yanlış LogPermanent
+>
+>   dize Mesajı \$
+>
+>   bool nolog yanlış
+>
+>   Dize Sahibi PC26.sec.softether.co.jp en \$ 20owner
+>
+> }
+>
+> }
+
+#### Yapılandırma dosyasının Veri Yapıları
+
+Konfigürasyon dosyası declare ile sınırlı alanlarda yeni düğümler tanımlayan ve oradaki birkaç veri modelleri ve düğümlerin saklayabilirsiniz. Düğüm adı ve veri listesi şemaları belirlenir ve non-uyumlu veri yapıları göz ardı edilir. doğrudan işletilen bile bir karakter yanlış girilirse içeriği önemli ölçüde tehlikeye girebilir bir şans var bu yüzden bu gözardı veri yapıları otomatik olarak yapılandırma dosyasından silinir. Yedek yapılandırma dosyası düzenlenebilir gerekiyorsa önceden yapılması gereken budur.
+
+aşağıdaki gibi yapılandırma dosyası içinde veri modellerinin bir listesidir.
+
+  **Veri örneği**   **içindekiler**                    **Veri Yapıları Boyutu**
+  ----------------- ---------------------------------- --------------------------
+  **Uint**          İmzasız 32 bitlik tamsayı          32 bit
+  **UInt64**        İmzasız 64-bit tamsayı             64 bit
+  **Bool**          bool                               1 bit
+  **Dizi**          Unicode dizesi (UTF-8 kodlanmış)   0-bit - sınırsız
+  **Bayt**          İkili (Base 64 kodlu)              0-bit - sınırsız
+
+#### Yapılandırma Dosyası Değiştirme
+
+belli bir noktada Yapılandırma dosyasının manuel olarak yedekleme içerikleri daha sonraki bir tarihte geri isteyen zaman \[vpn\_server.config\] dosyayı geri yüklerken, aşağıdaki prosedür yapılmalıdır.
+
+1.  o faaliyet tamamen eğer VPN Sunucusu programını durdurun. Tam durdurma vpnserver işlemi çalışmıyorsa sağlanması anlamına gelir.
+
+2.  "Vpn\_server.config" dosyasını değiştirin.
+
+3.  VPN Sunucu programını başlatın.
+
+4.  Yapılandırma doğru yerini almıştır emin olun.
+
+#### Başka Bir Bilgisayara yapılandırma dosyası aktarma
+
+Yapılandırma dosyası başka bir bilgisayara aynen içeriğini kopyalayarak bir bilgisayardan, VPN Server oluşturuldu durumlarda, eşdeğer yapılandırma bilgilerini kullanarak diğer bilgisayara VPN sunucusu başlatmak mümkündür.
+
+-   kopya kaynak VPN Server ve kopya hedef VPN Server için kullanılan işletim sistemleri ve işlemciler farklı olsa bile, yapılandırma bilgileri birebir kopyalandığı ve Yapılandırma dosyasının uyumluluk ikisi arasında muhafaza edilir. tek kopya kaynak sistemi üzerinde desteklenen fonksiyonlar Yapılandırma dosyası kopyalanmış olsa bile yeni bir sistem üzerinde desteklenmez unutmayın.
+
+-   Yapılandırma dosyası ikili biçimde olsa bile bilgisayarlar arasında transfer de mümkündür. CPU veya OS, sistem ve makine mimarisi tipine güvenmemek kadar ikili biçimde yapılandırma dosyası düzgün endian dönüşüm uğramıştır, çünkü değil, prensip olarak, çalışmasını etkileyebilir olmalıdır.
+
+#### Uzaktan yapılandırma dosyası İçeriği Okuma ve Yeniden Yazma
+
+Yapılandırma dosyası (vpn\_server.config) içeriği normalde elde veya VPN Server çalıştıran ve metin editörü açmadan veya dosya paylaşımı kullanarak bağlantı ve doğrudan indirme ve yükleme dosyası söz konusu bilgisayara ilk oturum açma olmadan değiştirilemez.
+
+Genel VPN Sunucu Yöneticiler uzaktan okuma ve / veya herhangi bir zamanda Yapılandırma dosyasını değiştirmek Ancak, SoftEther VPN Sunucu mümkün kılar.
+
+\[Düzenle Config'i.\] VPN Server Manager'da tıklayarak mevcut VPN Sunucusu Yapılandırma dosyasının içeriğini görüntüler. UTF-8 biçiminde dosyayı kaydetmek için de mümkündür. Aynı işlevi de yöneticinin müşteri terminali hazırlanan bir yapılandırma dosyası yüklemek için kullanılabilir. yükleme ve yapılandırma dosyasını yazarken, VPN Server sunucusu işlevi otomatik olarak yeniden ve yeni yapılandırma dosyasının içeriğini okur. Manuel rebooting veya VPN Server işleminin kendisi yeniden başlatmadan gerekli değildir. reboot ve Konfigürasyon dosyası okuma tamamlanmasından sonra, VPN sunucusu yeni yapılandırma dosyasının içeriğine dayalı işlem başlar.
+
+Aynı görev vpncmd yardımcı'nın kullanılarak gerçekleştirilebilir **\[ConfigGet\]** ve **\[ConfigSet\]** komutları. 
+
+### 3.2.6 Yapılandırma sürüm numaraları
+
+#### Yapılandırma sürüm numaraları
+
+VPN Server'ın Yapılandırma dosyasının içeriğini aşağıdaki durumlarda otomatik olarak değiştirilir.
+
+1.  VPN Server yapılandırma verileri VPN Server veya VPN Sunucu Yöneticisi veya vpncmd programını kullanarak görevleri yerine Sanal Hub Yöneticiler sonucunda değiştirildiğinde. Yeni bir kullanıcı oluşturulduğunda veya ayarlar, örneğin, değiştiği zaman.
+
+2.  Bu tür iletişim kullanıcıların trafik veya grup, Sanal Hub ve VPN sunucusu olarak istatistiksel veriler güncellendiğinde, olarak açıklandığı **3.3 VPN Sunucu Yönetimi** .
+
+Yapılandırma dosyasının içeriğini hem yukarıdaki 1 ve 2 durumunda değiştirilir iken, 1 yenilenen veriler VPN Sunucu ayarları veri parçasıdır ve 2'de, yenilenen veri aşırı sık değil iken, tanımı gereği, böylece esastır önemli. Bunun gibi, 1'de olduğu gibi, ayarları bir değişiklik VPN sunucusu üzerinde gerçekleştirilir bir seferde sadece yapılandırma dosyasının sürüm bilgileri bir değeri (artan) arttırılmasıyla, Sistem Yöneticisi nasıl yapabiliyor birçok kez Yapılandırma dosyası ayarları değiştirildi.
+
+Örneğin, harici bir komut dosyası belirtmeden bir yöntem benimsemeye isteyen olduğunda, otomatik olarak (1 örneğinde olduğu gibi) kendi ayarları değiştirilmiş yalnızca Yapılandırma dosyasını yedekleme ve sadece istatistiki veri güncellendiğinde yedekleme olmadığında ( 2'de durum) olduğu gibi, her zaman yapılandırma dosyası içinde sürüm bilgilerini kontrol edilmesi tavsiye edilir ve değeri bir yedekleme yapmak için, bir önceki check bu konuda artmıştır eğer dosyayı söyledi.
+
+#### Yapılandırma Sürüm Numarası 
+
+Yapılandırma sürüm numarası adında \[uint türü\] tarafından Yapılandırma dosyasının üst kısmında yazılır **\[ConfigRevision\]** .
+
+  -------------------------------
+  > kök beyan
+  >
+  > {
+  >
+  > **uint ConfigRevision 120**
+  >
+  > :
+  >
+  > :
+  -------------------------------
+  -------------------------------
+
+Yukarıdaki örnekte, ilk oluşturulduktan sonra Yapılandırma dosyasının ayarları 120 kez değiştirilmiş olduğu görülebilir.ConfigRevision değeri bir VPN sunucusu başlatıldı her zaman artabilir. 
+
+### 3.2.7 Yapılandırma Geçmişi
+![](https://www.softether.org/@api/deki/files/165/=3-3-6.png?size=webview)
+![][45]
+
+*Otomatik Yapılandırma tarihini kaydedildi.*
+
+#### İstatistiksel Bilgi Edinme
+
+Istatistiki bilgiler VPN sunucusu sanal Hub kullanıcı nesnesi ve grup nesneyi seçerek VPN Sunucu Yöneticisi kullanılarak GUI penceresinde görüntülenebilir. Aynı zamanda bu mekanik yapılandırma dosyası ve süreci elde etmek için basit bir iştir.Vpncmd programı ile istatistiksel bilgi edinmek için kullanın **\[ServerStatusGet\]** , **\[StatusGet\]** , **\[UserGet\]** ve **\[GroupGet\]**komutları.
+![](https://www.softether.org/@api/deki/files/166/=3-3-7.png?size=webview)
+![][46]
+
+*Sanal Hub istatistiki bilgi penceresi.*
+
+#### Küme Yapılandırma sırasında Bütün küme İstatistiksel Bilgi Edinme
+
+VPN Sunucular çok sayıda bir küme yapılandırırken, tüm küme üzerinde gerçek zamanlı istatistiki bilgiler düzenli olarak küme denetleyicisi olan VPN sunucusu tarafından toplanır. yapılandırmasına sırasında tüm küme iletişim hacmini bilmek isteyen, bu nedenle, bir yönetici bağlantı kurmak ve gerekli istatistiki bilgiler edinir. Sanal Hub ve kullanıcı / grup istatistiki bilgilerin toplam değerleri de küme ortamında görüntülenebilir.
+
+ 
+
+  --------------------------------------------------------
+  > ServerConfiguration beyan
+  >
+  > {
+  >
+  > **UInt64 AutoDeleteCheckDiskFreeSpaceMin 104857600**
+  >
+  > uint AutoSaveConfigSpan 300
+  >
+  > dize CipherName RC4-MD5
+  >
+  > bool DisableDosProction yanlış
+  >
+  > :
+  >
+  > :
+  --------------------------------------------------------
+  --------------------------------------------------------
+
+-   VPN Sunucu işletim sisteminin API çağırarak günlük dosyalarını kaydetmek için kullanılabilir disk alanını alır.
+
+-   Windows 2000 veya disk kotası VPN Server çalıştıran hesaba göre ayarlanır sonraki işletim sistemi sürümlerinde, bu disk kota en ayrılan alan kullanılabilir disk alanı olarak kullanılmaktadır. Linux ve UNIX sistemleri için, disk kota alanı kullanılmaz. Bu nedenle, disk kotası UNIX sistemleri üzerinde ayarlandığında otomatik disk alanı ayarlama fonksiyonu düzgün çalışmıyor olduğunu bir yüksek olasılık olduğunu lütfen unutmayın.
+
+ 
+
+### 3.2.8 Arıza Kurtarma
+
+SoftEther VPN Sunucu aşağıdaki yöntemleri kullanarak mümkün olduğunca VPN Server çalışması sırasında meydana gelen arızaları otomatik kurtarma çalışır.
+
+#### Program hatası Hatası Kurtarma
+
+SoftEther VPN Sunucu programı ve VPN sunucusu özenle tasarlanmış ve güvenilirlik ve istikrar, ve kendi programları içinde var hataların sayısının yüksek düzeyde gerçekleştirmek için uygulanan dayandığı Windows ve Linux işletim sistemleri çok azdır.Ancak, Sistem Yöneticileri hep önlemler ciddi bir hata oluşması durumunda almak ne düşünmelisiniz böylece hataları kesinlikle herhangi bir program olmayacağına dair bir ölçüde yukarıdaki garanti etmek mümkün değildir. Hatta sorun yazılımı ile yalan olmadığını varsayarak, göz de potansiyel donanım arızalarının verilmelidir. Örneğin, bu hata bellek modülü veya CPU tarafından yanlış bir hesaplama neden olmadığı da kesin olarak söylenemez.
+
+Böyle bir hafıza erişim ihlali olarak zor veya onarmak imkansız ya olan bilinmeyen bir direktif ya da yetkisiz kesme çağrılması yazılım veya donanım hatası var birçok durumda, hatalar ortaya içinde.
+
+Bu program hataları meydana geldiğinde, VPN sunucusu hemen VPN Sunucusu işlemi sonlandırır ve işlem bellek atar. Daha sonra yeniden başlattı süreci, Yapılandırma dosyasının içeriğini yeniden okur ve işleme devam etmek için çalışır. Bu süreçler genellikle bütün VPN Server anlamlı rahatsızlık yoktur, (birkaç saniye birkaç milisaniye itibaren) bir anda yürütülen bu yüzden vardır. Bu onarılamaz hata, kullanıcının bellek alanında ortaya çıktığında, VPN Server program böylece hata fark ve bu yüzden VPN sunucusu sürecini yeniden başlatmak ve VPN Sunucu Yöneticisi ihtiyacını ortadan kaldırarak, otomatik arıza kurtarma girişiminde anlamına gelir.
+
+#### Donanım Hatası oluşur Yapılandırma Veri ve Arıza Kurtarma Koruma
+
+VPN Sunucu programı Yapılandırma dosyasının fiziksel verileri yazma girişimi olduğunda (örneğin ani bir elektrik kesintisi gibi) bir donanım hatası oluşursa, Yapılandırma dosyasının fiziksel içerikleri zarar görmüş olabilir. Yapılandırma dosyasını yazarken böyle bir oluşum için hazırlık olarak, VPN Server her zaman yinelenen bir prosedürü yürütmektedir.
+
+Birincisi, fiziksel diskteki Yapılandırma dosyasının içeriğini bırakır, o zaman diske yeni yapılandırma dosyasının içeriğini yazar.yazma işleme tamamlandıktan sonra, flaş OS'nin yazma tamponu için komut verir ve veri yazma fiziksel diske kararlıdır kadar bekleme devam ediyor. fiziksel veriler kararlıdır sonra, eski yapılandırma verileri daha sonra silinir. Bu işlemler, el habersiz olan bir konumda gerçekleştirilmektedir.
+
+Yapılandırma dosyası bir sonraki açılışında üzerine hasar olacağı bir şans olduğunda, bir girişim hemen hasarlı Yapılandırma dosyasını yazmadan önce günlüğüne yedeklenmiş önceki yapılandırma verileri kullanarak yapılandırma içeriğini onarmak için yapılır. Çoğu durumda, bu başarılı ve yapılandırma içeriği geri yüklenir. Sistem Yöneticisi elle yapmak zorunda kalmaması Bu süreçler, otomatik olarak sistem geri dahaki sefere yapılmaktadır.
+
+#### Yapılandırma Dosyası Otomatik kaydet
+
+VPN Server otomatik yapılandırma dosyası (istatistiki bilgiler de dahil olmak üzere yapılandırma dosyasında yer alan bilgilere hiçbir değişiklik olmamıştır zaman hiçbir otomatik kaydetme meydana unutmayın) kaydeder. VPN Sunucu işlemi aniden normal kapatma anormal yerine sona erer bile tasarruf önceki otomatik anda yapılandırmasına geri yüklemek mümkün olduğu anlamına gelir.
+
+Otomatik Kaydet için varsayılan aralık **300 saniye** . Bu otomatik kaydetme aralığı yeniden modifiye edilebilir**\[AutoSaveConfigSpan\]** değerini **\[ServerConfiguration\]** Yapılandırma dosyasının içinde düğümün. Ayrıntılar için aşağıdaki alana bakın.
+
+  ----------------------------------------------------
+  > ServerConfiguration beyan
+  >
+  > {
+  >
+  > UInt64 AutoDeleteCheckDiskFreeSpaceMin 104857600
+  >
+  > **uint AutoSaveConfigSpan 300**
+  >
+  > dize CipherName RC4-MD5
+  >
+  > bool DisableDosProction yanlış
+  >
+  > :
+  >
+  > :
+  ----------------------------------------------------
+  ----------------------------------------------------
+
+#### DoS Attack karşı otomatik Savunma
+
+VPN Server tarafından ağa açıklanan TCP / IP dinleyici portları Internet gibi ortak bir IP ağına bağlı olduğumuz zamanlarda, onlar sürekli internet konaklardan saldırılara karşı savunmasızdır. En tehlikeli saldırı SYN Flood, DoS saldırısı, TCP / IP bağlantı noktası bağlantı isteklerini büyük bir miktar gönderir ( "Denial-of-service" saldırı) bir tür denir.
+
+Birçok işletim sistemi SYN Flood bir saldırıya karşı savunmak için önlemler ile donatılmıştır. SYN Flood saldırısı, güvenlik duvarları ve IDP (Saldırı Tespit ve Önleme) tarafından bir ağ üzerinde bloke edilebilir. Ancak, TCP / IP bağlantı istekleri bu mekanizmalar düzgün çalışmaz veya ayarlar eşikleri çok büyük olması halinde VPN sunucusu ulaşacak.
+
+VPN Sunucu gelen TCP / IP bağlantı isteklerini büyük miktarda işlemeye çalıştığında, sistem kaynaklarının büyük miktarda gereklidir. VPN Sunucusu özdeş bir kaynaktan gelen istekleri göndermek için sorumlu bir SYN paket bir dinleyici limanda geldi ve hemen işlemeden önce bağlantı o başlar almak için bu atar algılamak için tasarlanmıştır nedeni budur. Bu DoS saldırıları ile başa çıkmak için VPN Server'ın otomatik savunma fonksiyonudur. Bu işlev varsayılan modda etkindir.
+
+Bu fonksiyon yeniden devre dışı bırakılabilir **\[DisableDosProction\]** içinde değerini **\[ServerConfiguration\]** Yapılandırma dosyasında düğümün **\[true\]** . Aşağıdaki gibi özel ayarlar bulunmaktadır.
+
+  ----------------------------------------------------
+  > ServerConfiguration beyan
+  >
+  > {
+  >
+  > UInt64 AutoDeleteCheckDiskFreeSpaceMin 104857600
+  >
+  > uint AutoSaveConfigSpan 30
+  >
+  > dize CipherName RC4-MD5
+  >
+  > **bool DisableDosProction gerçek**
+  >
+  > :
+  >
+  > :
+  ----------------------------------------------------
+  ----------------------------------------------------
+
+ 
+
+### 3.2.9 Alive Internet Bağlantısı İşlevi tutun
+
+VPN Sunucusu herhangi bir zamanda internetten bir VPN bağlantısı isteğine yanıt vermek için yüklü olduğu bilgisayarı yapılabilmesi için, VPN sunucusu sürekli olarak çalıştığını her internete paketleri göndermek için bir işlev bütünleştirir. VPN istemci bilgisayarlar sürekli bazı ISDN, PHS ve ADSL hatları kullanırken bile ortamlarda, çizgi hiç kesmeden internete sunucu bilgisayarın bağlantısını koruyarak her zaman internet üzerinden VPN sunucusuna bağlanmak için bu işlev mümkün kılar onların belli bir süre için hiçbir iletişim olmuştur zaman ayırın internet bağlantısı.
+
+Yaşatmak Internet Bağlantısı Fonksiyon TCP / IP veya UDP / IP paketleri reçete aralıklarla belirlenen ana makine bağlantı noktası numarasına gönderilmesini sağlar. Bu paketlerin veri boyutu, son derece küçük olduğu ve içerikleri rasgele sayılar kullanılarak oluşturulur.
+
+Yaşatmak Internet Bağlantısı Fonksiyon varsayılan olarak etkin ve aşağıdaki bağlantı ayar değerlerini kullanır edilir.
+
+  **Giriş**              **İlk ayar değerleri**
+  ---------------------- -------------------------
+  Evsahibi               keepalive.softether.org
+  Sunucu numarası        80
+  Paket Gönder aralığı   50 saniye
+  Protokol               UDP / IP Protocol
+
+Ardından, VPN Sunucu Yöneticisi'nde \[Şifreleme & Ağ\] açmak, Alive Internet Bağlantısı işlevin ayarlarını tutun değiştirmek için \[Alive Internet bağlantısı tutma fonksiyonu\] ve ilgili kutulara ayarları girin. Vpncmd yardımcı olarak, aynı işlemleri kullanılarak gerçekleştirilebilir **\[KeepEnable\]** , **\[KeepDisable\]** , **\[KeepSet\]** ve **\[KeepGet\]** komutlar.
+![](https://www.softether.org/@api/deki/files/167/=3-3-8.png?size=webview)
+![][47]
+
+*Alive Internet bağlantısı fonksiyon ayarları penceresini tutun.*
+
+### 3.2.10 Sunucu Bilgi Edinme
+
+#### Sunucu Durumu Alınması
+
+VPN Server mevcut dinamik durumu VPN Sunucu Yöneticisi'nde \[View sunucu durumunu\] tıklanarak elde edilebilir. Vpncmd yardımcı programı kullanın **\[ServerStatusGet\]** komutu.
+![](https://www.softether.org/@api/deki/files/168/=3-3-9.png?size=webview)
+![][48]
+
+*Sunucu durumu penceresi.*
+
+aşağıdaki gibi görüntülenir öğelerdir.
+
+  **Giriş**                                          **içindekiler**
+  -------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  sunucu Türü                                        Genellikle \[Stand-Alone Server\]. Küme işlevini kullanırken, bu olur bir \[küme denetleyicisi\] veya \[küme üyesi sunucu\] ya.
+  TCP Bağlantıları sayısı                            VPN Sunucu VPN oturumları ve yönetim oturumları gibi bağlı tüm TCP Bağlantıları toplam değerini gösterir. küme denetleyicisi için, diğer tüm küme üyeleri için tüm TCP bağlantılarının toplam değeri diğer iki öğe, yani \[Bu sunucunun TCP bağlantıları\] ve \[Diğer küme üyenin TCP bağlantıları\] ek olarak görüntülenir.
+  Sanal Hub sayısı                                   VPN Server işletim Sanal Hub toplam sayısını görüntüler. bu sunucu görüntülenir içindeki küme üyesi sunucusu için, sanal Hub bireysel sayısı hangi bir örneği şu anda mevcut iken küme denetleyicisi için, kümede tanımlanan sanal Hub toplam sayısı görüntülenir. Buna ek olarak, \[Statik Sanal Hub\] ve \[Dinamik Sanal Hub\] hem sayı kümesi ortamı için görüntülenir.
+  Oturumların sayısı                                 Şu anda VPN Server'a bağlı VPN oturumları sayısını görüntüler. tüm küme için bağlı seans sayısı küme denetleyicisi yanı sıra \[Bu sunucunun seans\] ve \[Diğer küme üyenin sunucu oturumları\] görüntülenir.
+  MAC Adresi Tabloları                               VPN sunucusu tarafından yönetilen tüm sanal Hub içinde MAC Address Tablolar toplam sayısını görüntüler. kümeler içinde VPN sunucusu tarafından yönetilen tüm MAC Adresi Tablolar toplam sayısı küme denetleyicisi için görüntülenir.
+  IP Adresi Tablolar sayısı                          VPN sunucusu tarafından yönetilen tüm sanal Hub içinde IP adresi tablolara toplam sayısını görüntüler. kümeler içinde VPN sunucusu tarafından yönetilen tüm IP adresi tablolar sayısı Küme Denetleyicisi için görüntülenir.
+  Kullanıcı sayısı                                   VPN sunucusu tarafından yönetilen tüm sanal Hub içinde tanımlanan kullanıcı nesnelerin toplam sayısını gösterir. herhangi bir kullanıcı veritabanlarını tutmaz çünkü küme üyesi sunucusu her zaman 0 görüntüler.
+  Grupların sayısı                                   VPN sunucusu tarafından yönetilen tüm sanal Hub içinde tanımlanan grup nesnelerin toplam sayısını gösterir. herhangi bir grup veritabanları tutmaz çünkü küme üyesi Server her zaman 0 görüntüler.
+  istatistiki Bilgiler                               Bugüne kadar iletişim hacmine ilişkin istatistiksel bilgileri görüntüler.
+  Sunucu Başlama Saati                               VPN Sunucu başlatıldı saati görüntüler.
+  Şimdiki zaman                                      VPN Sunucu bilgisayarın geçerli saati görüntüler. Görüntülenen zaman yerel saate dönüştürür.
+  64-bit Yüksek Hassasiyetli Mantıksal Sistem Saat   VPN Server tarafından dahili olarak uygulanan 64-bit zaman verilerini görüntüler.
+  Bellek Kullanım Durumu                             VPN Server çalıştıran bilgisayarın fiziksel ve sanal bellek hem de kullanım durumunu gösterir. Bu, yalnızca Windows işletim sistemlerinde görüntülenebilir.
+
+#### VPN Sunucu Bilgileri
+
+VPN Server statik bilgiler VPN Sunucu Yöneticisi'nde \[SoftEther VPN Sunucusu bilgilerini\] tıklanarak elde edilebilir. Vpncmd yardımcı programı kullanın **\[ServerInfoGet\]** komutu.
+
+VPN Server statik Şu an için bilgi sunucuda kullanılabilir şartnamelerin VPN Server sürüm ve ürün adın işletim sisteminin yanı sıra fonksiyonların bir listesi ve listedeki bilgileri görüntüler. Maksimum bağlantı eşzamanlı sayısı, örneğin, aynı zamanda burada gösterilir.
+![](https://www.softether.org/@api/deki/files/169/=3-3-10.png?size=webview)
+![][49]
+
+*VPN Server bilgi penceresi.*
+
+### 3.2.11 SSL İletim kullanılmak üzere Seçme Şifreleme Algoritmaları
+
+VPN Sunucu setleri **RC4-MD5** SSL iletimi kullanılmak üzere varsayılan şifreleme ve elektronik imza algoritması olarak algoritması. Diğer algoritmayı seçmek de mümkündür.
+
+Açılış \[Şifreleme ve Ağ\] VPN Sunucu Yöneticisi'nde, ardından \[Şifreleme algoritması Adı\] seçerek açılan kutusunda. Vpncmd yardımcı programı kullanın **\[ServerCipherSet\]** komutu.
+![](https://www.softether.org/@api/deki/files/170/=3-3-11.png?size=webview)
+![][50]
+
+*SSL iletim şifreleme algoritmaları için seçim penceresi.*
+
+### 3.3.16 VPN Server Service Reboot & Ayarlar bilgiler başlatılıyor
+
+VPN Sunucusu uzaktan yeniden yüklenebilir. Ancak, yeniden başlatma komutu ile eşdeğerdir VPN Sunucu Yöneticisi komutu yoktur. Bunun yerine, kullanmak gereklidir **\[Reboot\]** uzaktan VPN sunucusu yeniden amacıyla vpncmd yarar komutu.
+
+Belirlenmesinden **Yeniden Başlatma / RESETCONFIG: EVET** yeniden başlatmadan sonra geçerli Yapılandırma dosyasının içeriğini silerek ilk durumda VPN sunucusu yeniden başlatır.
+
+ 
+
+### 3.3.17 Günlüğü İletim İşlevi
+
+VPN Server'ın Syslog İletim işlevi kullanılabilir yerde, bir standart günlük teslimat protokolü syslog protokolü kullanılarak harici syslog sunucularına tüm VPN Server'ın yönetim günlüğüne içeriğini veya her sanal Hub güvenlik ve paket günlükleri göndermek mümkündür.
+
+Normalde, VPN Server'ın günlükleri her dosyaları olarak diske kaydedilen ancak Syslog İletim işlevini kullanarak, böylece yönetim maliyetlerini azaltarak günlük yönetimini güçlendirmek için Sistem Yöneticisi sağlar edilir. Belirli bir günlük içeriği syslog alıcının yazılımında oluştuğunda işlevi de uyarılar gönderebilir.
+
+Syslog İletim işlevi varsayılan modda kapalı olarak ayarlanır ve VPN Sunucu Yöneticisi \[Şifreleme ve iletişim ayarlarının\] erişerek aktif hale getirilebilir. Vpncmd yardımcı programı kullanın **\[SyslogEnable\]** komut veya **\[SyslogDisable\]** .
+
+Syslog İletim işlevi aktive edildiğinde, gönderilen günlükleri artık yerel sabit diske kaydedilir. Bu nedenle, lütfen unutmayın syslog sunucusu başlatmak ya da olmadığında problemler iletişim syslog sunucular arasında ortaya çıkan veya syslog sunucu işleme kapasitesi ve herhangi bir ara ağları veya protokol yığınları yetersiz olduğu zaman, bu günlükleri içerikleri esas olmalıdır yerine bakılmaksızın syslog işlevi etkin olup olmadığına bakılmaksızın, kaybolur kaydedildi olacak.
+![](https://www.softether.org/@api/deki/files/171/=3-3-12.png?size=webview)
+![][51]
+
+*Syslog İletim işlevi ayarları penceresi.*
+
+  -----------------------
+  > 192.168.3.10 HUB1
+  >
+  > 130.158.87.87 HUB1
+  >
+  > 61.197.235.210 Hub2
+  >
+  > \*
+  -----------------------
+  -----------------------
+
+#### Tüm Sanal Hub İdaresi modunda kaynak IP adresleri Belirlenmesi
+
+Her satırda sadece IP adreslerini yazma yönetim tüm VPN Server erişimi ve bu IP adresinden Sanal Hub tüm izin verir.Aşağıdaki açıklamada, örneğin, IP adresi 192.168.10.10 yönetim erişimi Tüm VPN Server Yönetim modunda mümkün olan tek kaynak IP adresidir. Ayrıca, 192.168.10.10 yönetim erişimi tüm sanal Hub için mümkün olan tek adresidir.
+
+  -----------------------
+  > 192.168.10.10
+  >
+  > 192.168.3.10 HUB1
+  >
+  > 130.158.87.87 HUB1
+  >
+  > 61.197.235.210 Hub2
+  >
+  > \* HUB3
+  -----------------------
+  -----------------------
+
+#### adminip.txt dosya izin
+
+adminip.txt dosyası uygun izinlere sahip kaydedilir. genel kullanıcılar Sistem Yöneticileri ek olarak, VPN Server bilgisayarına oturum edebiliyoruz Örneğin, yeterli önlemler adminip.txt dosyasını yeniden bu diğer kullanıcıların önlemek için önlemler alınmalıdır. 
+
+3.3 Sanal Hub Fonksiyonları
+---------------------------
+
+ 
+
+### 3.4.1 oluşturma Sanal Hub
+
+Çoklu Sanal Hub SoftEther VPN Server oluşturulabilir, ancak bunlar sadece tüm VPN Sunucu Yöneticileri tarafından oluşturulan veya silinebilir. VPN Sunucusu Sanal Hub oluşturduğunda, Sanal Hub yönetim şifre ile onları sağlayarak başka bir partiye verilmek üzere yetki mümkündür.
+
+Yeni Sanal Hub oluşturmak için, VPN Sunucu Yöneticisi'nde \[Sanal Hub Oluştur\] sekmesine tıklayın ve ilgili ayrıntıları girin.Alfanümerik karakterler ve bazı semboller Sanal Hub adı kullanılabilir. Sanal Hub (bu da daha sonraki bir tarihte belirlenmiş olabilir) oluştururken Sanal Hub yönetim şifresini belirlemek için de mümkündür. bir yönetim şifresini tayin değil imkansız Sanal Hub İdaresi modunda sanal Hub uzaktan yönetim bağlantı yürütmek için yapar.
+
+Vpncmd yardımcı programı kullanın **\[HubCreate\]** komutu. Kümeleme fonksiyonunu (bkz kullanırken [*3.9 Kümeleme*] ), birini kullanın **\[HubCreateDynamic\]** veya **\[HubCreateStatic\]** komutları yerine.
+![](https://www.softether.org/@api/deki/files/172/=3-4-1.png?size=webview)
+![][52]
+
+*Yeni Sanal Hub pencere oluşturun.*
+
+Sanal Hub oluşturduktan sonra, onu seçin ve yönetimini yürütmek için Yönetim penceresini görüntülemek. VPN Sunucu Yöneticisi Sanal Hub adı üzerine çift tıklandığında o hub idaresi için yeni bir pencere açar. Vpncmd yardımcı programı, sanal Hub kullanılarak seçilebilir **\[Hub\]** komutu. Sanal Hub tüm aşağıdaki açıklamalar Sanal Hub İdaresi pencere açık veya yönetilen sanal Hub \[Hub\] kullanılarak seçildiğini olduğunu varsayalım.
+![](https://www.softether.org/@api/deki/files/173/=3-4-1-2.png?size=webview)
+![][53]
+
+*Sanal Hub listesi ekranı.*
+
+### 3.4.2 Online ve Offline Durumu
+
+Sanal Hub hem çevrimiçi hem de çevrimdışı statüye sahiptir. Sanal Hub normalde çevrimiçi iken geçici olarak işlevlerini durdurmak isteyen zaman, aynı zamanda çevrimdışı durumuna ayarlanabilir.
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **durum**                **Açıklama**
+  ------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **İnternet üzerinden**   modu hangi VPN istemci bilgisayardan sanal Hub VPN bağlantısı mümkündür. Sanal Hub çağlayan bağlantı ayarlarını ve SecureNAT ayarları içeren Buna ek olarak, bu işlevler de çalışır. Sanal tabaka 3 anahtarları ve aynı zamanda koşmak Sanal Hub ile ilişkili yerel köprü bağlantıları.
+
+  **Çevrimdışı**           modu hangi VPN istemci bilgisayardan sanal Hub VPN bağlantısı mümkün değildir. Sanal Hub'a bir VPN bağlantısı denenir bir hata oluşur. Ayrıca, Sanal Hub durdurma içindeki tüm kaskad bağlantı ve SecureNAT ayarları. Sanal tabaka 3 anahtarları ve Sanal Hub ile ilişkili yerel köprü bağlantıları da durdurun.
+                           
+                           çevrimdışı mod, devam etmeden önce bu sanal Hub bağlı VPN oturumları tüm ilk kesmek online modundan Sanal Hub değiştirirken. Mod değiştirmek için ne zaman alacak olsa da, bu sanal Hub'a hiçbir VPN bağlantıları arada yapılır.
+                           
+                           çevrimdışı modda bir sanal Hub VPN iletişimi yürütmek değil de, hub idaresi hala sorunsuz yapılabilir.
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+VPN Sunucu Yöneticisi Sanal Hub durumunu, açık \[Sanal Hub özelliği\] değiştirmek ve seçmek için ya \[Online\] veya \[Offline\] \[Sanal Hub durumu\] penceresinden. Vpncmd yardımcı programı kullanın **\[Çevrimiçi\]** veya **\[Offline\]** komutu.
+
+ 
+
+### 3.4.3 Maksimum Eşzamanlı Bağlantılar
+
+Aynı anda Sanal Hub bağlanabilir seans sayısını ayarlamak mümkündür. Bu değer ayarlandığında, sanal Hub belirlenen sayısını aşan tüm VPN oturumları (inkar edilecek bağlanmaya çalışan sonraki tüm oturumları) bağlamak mümkün olmayacaktır.
+
+Maksimum eşzamanlı bağlantı sayısı yerel köprü oturumları, kaskad oturumları (geçişli yan tarafından oluşturulan sanal oturumları), SecureNAT oturumları veya sanal katman 3 seans içermez. VPN Sunucu / VPN Köprüsü / VPN Client ve Sanal Hub bağlı düzenli VPN bağlantıları gelen kaskad bağlantı sayısı sınırlıdır, söylemektir.
+
+Maksimum eşzamanlı bağlantı sayısını ayarlamak VPN Sunucu Yöneticisi \[Sanal Hub özellikleri\] penceresini açın ve \[Sınır Max VPN Sessions\] onay kutusunu, ardından kutunun \[Oturumlar Max Sayısı\] istenen değeri girin. Vpncmd yardımcı programı kullanın **\[SetMaxSession\]** komutu.
+![](https://www.softether.org/@api/deki/files/174/=3-4-3.png?size=webview)
+![][54]
+
+*Maksimum eşzamanlı Sanal Hub bağlantı oturumları için ayarları penceresi.*
+
+Max\_sessions, max\_sessions\_client ve max\_sessions\_bridge seçenekleri Sanal Hub İdaresi Seçenekleri kurulduğu durumlarda, bu seçenek değerleri her zaman ne olursa olsun maksimum eş zamanlı bağlantı seans sayısı ayarlanmış olup olmadığını veya olmasın uygulanır. 
+
+### 3.4.5 Oturum Yönetimi
+
+Şu anda sanal Hub'a bağlı VPN oturumları listesini görüntülemek için bunların her biri hakkında ayrıntılı bilgi görüntülemek için, ve zorla onları kesmek mümkündür.
+
+#### Oturum Listeleri gösteriliyor
+
+Sanal Hub ve dahili olarak üretilen oturumları bağlı VPN oturumları gösteren bir liste görüntülenir edilebilir. Bunun VPN Sunucu Yöneticisi \[Yönet Oturumlar\] butonuna tıklayarak oturumların bir listesini görüntüler. Bir oturumu listesi ayrıca vpncmd programı kullanılarak elde edilebilir **\[SessionList\]** komuta.
+
+kümeleme kullanarak bir küme denetleyicisi bağlarken, \[Oturum listesinde\] görüntülenen oturumları küme üyesi sunucu oturumları hepsini içerir.
+![](https://www.softether.org/@api/deki/files/175/=3-4-4.png?size=webview)
+![][55]
+
+*VPN Oturum yönetim penceresi.*
+
+bir oturum listesini görüntüleyen aşağıdaki bilgiler gösterilir.
+
++--------------------------------------+--------------------------------------+
+| **giriş**                            | **Açıklama**                         |
++======================================+======================================+
+| **Oturum, toplantı, celse**          | Kimlik özellikle Sanal Hub içinde    |
+|                                      | oturumu tanımlamak için. oturum adı, |
+|                                      | kullanıcı adı ve sıralı numarasını   |
+|                                      | gösteren kelimeleri ardından "SID-"  |
+|                                      | ile başlar.                          |
++--------------------------------------+--------------------------------------+
+| **yer**                              | Kümelenme görüntülenen \[Yerel       |
+|                                      | oturumlar\] kullanımda               |
+|                                      | değil. kümeleme kullanıldığında, bu  |
+|                                      | oturumun ilgilidir Küme              |
+|                                      | Denetleyicisi oturumu görüntülenir.  |
++--------------------------------------+--------------------------------------+
+| **kullanıcı**                        | Oturum ile ilişkili kullanıcı adı bu |
+|                                      | oturum için VPN bağlantısı yaparken  |
+|                                      | başarıyla doğrulandı kullanıcının    |
+|                                      | adı görüntülenir yani. Açıklandığı   |
+|                                      | gibi  [*2.2 Kullanıcı                |
+|                                      | Doğrulama*] yıldız kullanıcı ( "\*"  |
+|                                      | kullanıcı) kullanılırken, kullanıcı  |
+|                                      | kimlik doğrulaması yürütülen ve      |
+|                                      | kullanıcı adı başarıyla burada       |
+|                                      | görüntülenen RADIUS sunucusu veya NT |
+|                                      | etki alanı denetleyicisi tarafından  |
+|                                      | doğrulanır. Kullanıcı veritabanı     |
+|                                      | üzerinde adı, kullanıcı kimlik       |
+|                                      | doğrulaması kullanılan farklıdır     |
+|                                      | Nerede, ikincisi görüntülenir.       |
+|                                      |                                      |
+|                                      | kullanıcı adı aşağıdakilerden biri   |
+|                                      | olduğunda, bu oturum, VPN Server     |
+|                                      | içinde değil normal bir VPN          |
+|                                      | bağlantısı oturumuna oluşturulan     |
+|                                      | özel oturumunda ifade eder.          |
+|                                      |                                      |
+|                                      | -   **Yerel Köprü**\                 |
+|                                      |     yerel gelin oturumuna eder.      |
+|                                      |                                      |
+|                                      | -   **Cascade**\                     |
+|                                      |     kaskad oturumu (kaskad bağlantı  |
+|                                      |     gerçekleştiren tarafın oturumu)  |
+|                                      |     ifade eder.                      |
+|                                      |                                      |
+|                                      | -   **SecureNAT**\                   |
+|                                      |     Bir SecureNAT                    |
+|                                      |     oturum değinmektedir.            |
+|                                      |                                      |
+|                                      | -   **L3SW**\                        |
+|                                      |     sanal katman 3 switch            |
+|                                      |     oturumuna eder.                  |
++--------------------------------------+--------------------------------------+
+| **kaynak Sunucu**                    | Düzenli VPN bağlantısı alan VPN      |
+|                                      | oturumu tarafından oluşturulan bir   |
+|                                      | oturumda durumunda, VPN kaynak       |
+|                                      | bilgisayarın ana bilgisayar adı      |
+|                                      | görüntülenir. Ters DNS çözümlemesi   |
+|                                      | başarısız olduğunda IP adresi        |
+|                                      | görüntülenir.                        |
++--------------------------------------+--------------------------------------+
+| **TCP bağlantıları**                 | Düzenli VPN bağlantısı alan VPN      |
+|                                      | oturumu tarafından oluşturulan bir   |
+|                                      | oturumda durumunda, VPN oturumun     |
+|                                      | iletişimde kullanılan TCP / IP       |
+|                                      | bağlantı sayısı                      |
+|                                      | görüntülenir. Bakınız  [*2.1 VPN     |
+|                                      | İletişim Protokolü*] TCP / IP        |
+|                                      | bağlantıları sayısı ile ilgili       |
+|                                      | ayrıntılar için.                     |
++--------------------------------------+--------------------------------------+
+| **aktarım Bayt**                     | Geçerli VPN oturumda aktarılan sanal |
+|                                      | Ethernet çerçeveleri toplam veri     |
+|                                      | boyutunu görüntüler.                 |
++--------------------------------------+--------------------------------------+
+| **aktarım paketler**                 | Geçerli VPN oturumda aktarılan sanal |
+|                                      | Ethernet çerçeveleri toplam sayısını |
+|                                      | görüntüler.                          |
++--------------------------------------+--------------------------------------+
+
+Aşağıdaki yedi simge türleri oturum listesinde görüntülenir.
+
+  **ikon**   **Sorumlu Oturum Tipi**
+  ---------- --------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ![][56]    Genel VPN oturumunu belirtir (yani rutin VPN bağlantısı ve bir köprü / yönlendirici modu alma veya mod oturumunu izleyip tarafından oluşturulan bir oturum).
+  ![][57]    Bir bridge / router modu oturumu gösterir.
+  ![][58]    Bir izleme modu oturumu gösterir.
+  ![][59]    Yerel bir köprü oturumu gösterir.
+  ![][60]    Bir çağlayan bağlantı oturumu gösterir.
+  ![][61]    Bir SecureNAT oturumu gösterir.
+  ![][62]    sanal katman 3 switch oturumu gösterir.
+![](https://www.softether.org/@api/deki/files/176/=3-4-5.png)
+![][63]
+
+*Oturum ayrıntıları veri görüntüleme penceresi.*
+
+Ayrıntılı oturum verilerinin, şu önemlidir.
+
+  **giriş**                                 **Açıklama**
+  ----------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **Kaynak IP Adresi**                      VPN oturumun kaynak IP adresini gösterir.
+  **Kaynak Host Name**                      Kaynak IP adresi ters kararı ile elde edilen konağın adını görüntüler. Ters çözünürlük başarısız olduğunda, \[Kaynak IP adresi\] ile aynı karakter görüntülenir.
+  **Kullanıcı Adı (Kimlik Doğrulama)**      VPN oturumuna bağlı kullanıcının adını gösterir. Açıklandığı gibi [*2.2 Kullanıcı Doğrulama*]yıldız kullanıcı ( "\*" kullanıcı) kullanılırken, kullanıcı kimlik doğrulaması yürütülen ve kullanıcı adı başarıyla burada görüntülenen RADIUS sunucusu veya NT etki alanı denetleyicisi tarafından doğrulanır. Kullanıcı veritabanı üzerinde adı, kullanıcı kimlik doğrulaması kullanılan farklıdır Nerede, ikincisi görüntülenir.
+  **Kullanıcı Adı (Veritabanı)**            VPN oturumuna bağlı kullanıcının adını gösterir. Yıldız işareti kullanıcıyı ( "\*" kullanıcı) ve kullanıcı veritabanı üzerinde adı, kullanıcı kimlik doğrulaması kullanılan bir sapma olursa, kullanıcı veritabanı üzerinde adı görüntülenir kullanırken. kullanıcı veritabanı üzerinde adı, kullanıcı kimlik doğrulaması kullanılan farklıdır Nerede, ikincisi görüntülenir.
+  **Sunucu Ürün Adı**                       oturumu kabul SoftEther VPN Server ürün adını görüntüler.
+  **sunucu Sürümü**                         oturumu kabul SoftEther VPN Server sürümü adını görüntüler.
+  **sunucu Oluşturma**                      oturumu kabul SoftEther VPN Server sunucu yapı numarasını gösterir.
+  **Bağlantı Başlama Saati**                VPN oturumu bağlantısı işleme başladı saati görüntüler. Bu VPN Server'ın \[İlk oturum onaylama zaman\] ve \[Geçerli oturum onaylamak zaman\] özdeş olduğunu unutmayın.
+  **Yarı çift yönlü TCP Bağlantı Modu**     VPN oturumunda SoftEther VPN protokolü iletişim modu yarı çift yönlü bağlantı modu olup olmadığını gösterir.
+  **VoIP / QoS İşlevi**                     (Bkz VoIP / QoS desteği fonksiyonu olmadığını gösterir  [*1.9 VoIP / QoS Destek Fonksiyonu*]Bu oturumda geçerlidir detaylar için).
+  **TCP Bağlantıları sayısı**               VPN oturumunu oluşturan TCP / IP bağlantıları mevcut numarasını görüntüler.
+  **TCP bağlantıları en fazla sayısı**      VPN oturumunu teşkil etmek için kullanılabilir TCP / IP bağlantı sayısını gösterir.
+  **Şifreleme**                             VPN oturumu şifreleme ve elektronik imza ile korunmaktadır olmadığını gösterir.
+  **Sıkıştırma kullanımı**                  veri sıkıştırma algoritmaları tarafından sıkıştırılmış iletişim kullanılıyor olup olmadığını gösterir.
+  **Oturum Adı**                            oturumu tanımlamak için kimliğini belirtir.
+  **Oturum Anahtarı (160bit)**              Özellikle VPN Server tarafından oluşturulan oturumu tanımlamak için iç yönetim kimliğini belirtir.
+  **Köprü / Router Modu**                   oturum türü bir köprü / yönlendirici modunda oturum olup olmadığını gösterir.
+  **izleme Modu**                           oturum türü bir izleme modunda oturum olup olmadığını gösterir.
+  **Giden Veri Boyutu**                     SoftEther VPN protokolü VPN Server VPN kaynağından iletilen verilerin bayt (IP ağı üzerinden akan yaklaşık gerçek fiziksel paket hacmini gösterir).
+  **Gelen Veri Boyutu**                     SoftEther VPN protokolü VPN kaynağına VPN Server iletilen verilerin bayt (IP ağı üzerinden akan yaklaşık gerçek fiziksel paket hacmini gösterir).
+  **istatistiki Bilgiler**                  gönderilen / alınan sanal Ethernet çerçeve tipi paketlerin ve (gerçek zamanlı olarak güncellenir) toplam veri boyutunu gösterir.
+  **İstemci Ürün Adı**                      VPN kaynak yazılımın adını belirtir.
+  **Müşteri Sürüm**                         VPN kaynak yazılımının sürüm numarasını gösterir.
+  **İstemci İşletim Sistemi Adı & Sürüm**   adını ve VPN kaynak yazılım çalıştığı işletim sisteminin sürümünü gösterir.
+  **Müşteri Host Name**                     VPN kaynak yazılım tarafından bildirilen istemci bilgisayarın ana bilgisayar adını gösterir.
+  **Müşteri Limanı**                        VPN kaynak yazılım tarafından bildirilen istemcinin TCP / IP port numarasını gösterir.
+  **Sunucu Host Name**                      VPN kaynak yazılım bağlanmaya çalışıyor belirlenen sunucunun adını belirtir.
+  **Sunucu IP adresi**                      VPN kaynak yazılım bağlanmaya çalışıyor belirlenen sunucu adının öne kararı sonucunda IP adresini belirtir.
+  **Sunucu portu**                          VPN kaynak yazılım bağlanmaya çalışıyor belirlenen sunucusunun bağlantı noktası numarasını gösterir.
+  **Vekil Sunucu Adı**                      VPN kaynak yazılım VPN bağlanmak için bir proxy sunucusu kullanarak proxy sunucusunun ana bilgisayar adını belirtir.
+  **Vekil IP Adresi**                       VPN kaynak yazılım VPN bağlanmak için bir proxy sunucusu kullanarak proxy sunucusunun IP adresini belirtir.
+  **Proxy Bağlantı Noktası**                VPN kaynak yazılım VPN bağlanmak için bir proxy sunucusu kullanarak proxy sunucusunun TCP / IP port numarasını gösterir.
+
+### 3.4.11 Cascade Bağlantı İşlevleri
+
+#### Cascade Bağlantıları
+
+kaskad bağlantı oluşturmak için mekanizmaları ve yöntemler SoftEther VPN kullanarak bir site-to-site VPN oluşturmak çok önemlidir.
+
+kaskad bağlantı işlevini kullanarak aynı veya ayrı bilgisayarlarda çalışan diğer sanal Hub VPN Server içinde bir sanal Hub kaskad bağlantı sağlar.
+
+İki Sanal Hub ayrı bilgisayarlar, hatta onlar aynı bilgisayarda çalışan üzerinde çalışırken, bu hub aslında bir katman 2 ağının açısından iki tamamen izole kesimleri bu yüzden herhangi bir şekilde bağlı değildir. Ancak, birçok durumda Internet gibi ortak bir IP ağı üzerinden tek bir segment olarak iki Sanal Hub çalıştırmak için bir arzu olabilir.  Bir çağlayan bağlantısı kullanarak çok uzun bir ağ kablosu ile bağlayarak sanki iki veya daha fazla sanal Hub bağlanmasını sağlar.
+
+Sanal Hub B ile bir uzaktan bulunan sanal Hub A basamaklı serbest tabaka yerel olarak köprülü A bağlanan bir sanal ağ bağdaştırıcısı ve yerel A köprülü bir ağ bilgisayarına ve oda bağlanan bir ağ bağdaştırıcısı ve bir ağ bilgisayar arasında 2 (Ethernet düzeyi) iletişimi sağlar B. diğer bir deyişle, birbirlerinin Sanal Hub bağlı bilgisayarlar bu bağlantı sanal VPN Client tek veya bir fiziksel ağ adaptörünün hedef olabilir olabilir, burada ne olursa olsun gerçek ağ topoloji bir tabaka 2 seviyesinde, özgürce iletişim kurabilir yerel bir sanal Hub köprülü ve Sanal Hub başka göbek hedef bilgisayara ulaşması şekilde kaskad bağlı olduğunu.
+![](https://www.softether.org/@api/deki/files/181/=3-4-10.png?size=webview)
+![][64]
+
+*Sanal Hub arasındaki Cascade bağlantısı.*
+
+Sanal Hub, yani açıkçası basamaklı iki Sanal Hub varlığını gerektirir kaskad bağlantı ve onu almak için bir sanal Hub başlatmak için. kaskad bağlantı alan Sanal Hub açısından bakıldığında, gelen bağlantı durum kullanıcı kimlik doğrulaması sadece VPN Client sanki gerekli olduğu ortak bir VPN oturumu (bridge / router modunda oturum) olarak işlenir bir VPN bağlantısı yürüten edildi Sanal Hub.
+![](https://www.softether.org/@api/deki/files/182/=3-4-11.png?size=webview)
+![][65]
+
+*Başlatılıyor ve kaskad bağlantı alan.*
+
+#### Bir Cascade bağlantı oluşturma
+
+Başka bir sanal Hub'a Sanal Hub için bir kaskad bağlantı oluşturmak için, VPN Sunucu Yöneticisi'nde \[Cascade Bağlantıları Yönet\] butonuna tıklayın. Bu pencereden \[ "Sanal Hub adı" Cascade Connection\] görüntüler. \[Oluştur\] ve VPN Sunucu ana bilgisayar adı, Sanal Hub ve kullanıcı kimlik doğrulaması için ilgili ayrıntıları girmek Sonraki tıklayın. Basamaklı zaman doğrudan TCP / IP bağlantısı kullanarak ek olarak bir HTTP veya SOCKS proxy sunucusu üzerinden VPN bağlantısı yapmak da mümkündür.
+
+Yeni kaskad bağlantı oluştururken ürün girilecek pratik bir yeni VPN Client bağlantı ayarını oluşturmak için gerekli aynıdır. 
+
+Tüm kullanıcı kimlik doğrulama yöntemleri akıllı kart kimlik doğrulaması dışında kaskad bağlantı için kullanılabilir.
+
+ 
+![](https://www.softether.org/@api/deki/files/183/=3-4-12.png?size=webview)
+![][66]
+
+*Cascade bağlantısı oluşturmak ve düzenleme penceresi.*
+
+#### Cascade Connection Online ve Offline Durumu
+
+Sanal Hub yeni bir çağlayan bağlantısı oluşturma üzerine, bu kaskad bağlantı çevrimdışı. Çevrimdışı bir çağlayan bağlantısı üzerinde iletişim kurmak mümkün değildir. Bir kaskad bağlantı kullanarak iletişimi başlatmak için, istenen kademeli bağlantısı \[ "Sanal Hub adı" Cascade Bağlantısı\] VPN Sunucu Yöneticisi penceresini seçin ve \[Online\] düğmesine tıklayın.
+
+Online durumuna kaskad bağlantı ayarı üzerine, Sanal Hub çağlayan bağlantı ayarlarını doğrultusunda mümkün olduğunca kaskad bağlantıyı sürdürmek için çalışır. Hedef VPN sunucusu sanal Hub bağlantı doğruladı ve \[Çevrimiçi (bağlı)\] \[Durum\] belirir sonra kaskad başarılı olur. Bir hata oluştuğunda, hata kodu bu \[Durum\] ekranda görünecektir. Hatanın nedeni kaskad bağlantı ayarlarında bir giriş hatası atfedilir, ilk, kaskad bağlantı çevrimdışı duruma \[Düzenle\] butonuna tıklayarak bağlantı ayarlarını düzeltmek, ve bir kez daha \[Online\] butonuna tıklayın.
+
+Açıklandığı gibi [*2.1 VPN İletişim Protokolü*] VPN bağlantısı başarısız ya da iletişim esnasında kesilir yeniden bağlanma ayarlarına VPN oturumu bağlantısı başarısız veya basamaklı sırasında kesildiğinde, yeniden bir girişim her 10 saniyede yapılır.Bu şekilde, sanal Hub kadar sonrakinin ağ izin verdiği kaskad hedef Sanal Hub ile sürekli bağlantıyı sürdürmek için çalışır.
+
+Kaskad bağlantı statüsünde herhangi bir değişiklik VPN sunucusunun sunucu günlük ve Sanal Hub güvenlik günlüğüne kaydedilir. Düzenli olarak bu günlükleri kontrol kaskad bağlantı başarı ve başarısızlık kayıtları hakkında bilgi sağlar ve hat durumunun bir anlayış sağlar.
+
+ 
+![](https://www.softether.org/@api/deki/files/184/=3-4-13.png?size=webview)
+![][67]
+
+*Kaskad bağlantı yönetimi penceresi.*
+
+ 
+![](https://www.softether.org/@api/deki/files/185/=3-4-14.png?size=webview)
+![][68]
+
+*Cascade oturumları pencereye uygulanabilir güvenlik ilkesi ayarları.*
+
+#### Cascade Bağlantıların creatable sayısı
+
+Bir **128 maksimum** Gerçekte, tek bir sanal Hub'dan kaskad bağlantıları büyük miktarda bağlamak için gerekli değildir, ancak kademeli bağlantı, bir Sanal Hub oluşturulabilir.
+
+#### Cascade Bağlantısı Durumu
+
+Kaskad başlatan hub kaskad bağlantı durumunu her an elde edilebilir. VPN Sunucu Yöneticisi istenen çağlayan bağlantıyı \[ "Sanal Hub adı" Cascade Bağlantısı\] penceresini seçilmesi ve \[Durum\] butonuna tıklayarak gerçek zamanlı olarak bu kaskad bağlantı oturumu için iletişim durumunu gösterir. Burada görüntülenen iletişim durumu neredeyse VPN Client Manager gösterilen bağlantılar ayarları 'iletişim durumu aynıdır. 
+
+kaskad bağlantı alan göbek Virtual Hub oturumu listesinde gösterilir anlamına gelir Köprü / Router Modu oturumu, varlık olarak tanır. kaskad otomatik olarak alıcı hub \[Cascade bağlantısı\] listesinde görüntülenen unutmayın. Ayrıntılar için 3.4.5 bakınız.
+
+### Cascade Connections 3.4.12 Sunucu Kimlik Doğrulaması
+
+Sunucu sertifikalarının muayene Server kimlik doğrulama işleme açıklandığı kademeli hedef VPN sunucusu uygun sertifika zaman olup olmadığını kontrol etmek mümkün olur VPN istemcisi bağlantısı, benzer bir şekilde kaskad bağlantıları için desteklenir bağlar.
+
+destinasyonu konumuna VPN Sunucu sertifikasını kaydetmek için, kaskad bağlantı ayarları "düzenle penceresinde düğmesine \[bireysel Sertifika belirtin\] ve keyfi bir X.509 sertifikası seçmek tıklayın. imzalı sertifika kimlik doğrulaması kullanırken, kaskad başlatan Sanal Hub \[Güvenilen sertifika yetkilisi sertifikalarının\] güvenilir bir kök sertifikası (ya da ara sertifika) kayıt.
+
+### 3.4.14 Yönetici Bağlantı
+
+Birden çok kullanıcı ve gruplar Sanal Hub'a eklenebilir. 
+
+Sanal Hub Yöneticisi **Yönetici** kullanıcı gibi **bu sanal Hub Yönetici parolası** VPN bağlantısı için şifre olarak atar. Sanal Hub mevcut olsa bile bu VPN bağlantısı her zaman mümkündür. Sanal Hub Yöneticiler her zaman sorumlu oldukları Sanal Hub bir VPN bağlantısı yapabilir (VPN Sunucu / VPN Köprüsü kaskad bağlantı VPN Client gelen bağlantısına ek olarak mümkündür).
+
+Yönetici kullanıcı özel ve bu kullanıcı adı elle Sanal Hub'a eklenemez.
+
+Aşağıdaki güvenlik politikaları Yöneticisi tarafından bir sanal Hub VPN bağlantısı uygulanır.
+
+-   \[Yayınları Sayısına Limitsiz\] etkindir
+
+-   etkindir \[İzleme Modu izin ver\]
+
+Buna göre, yöneticiler her zaman sınırlamaları minimum miktarda Sanal Hub bir VPN bağlantısı yapabilirsiniz. VPN bağlantıları da ile mümkündür \[İzleme Modu\] sağladı.
+
+Vpncmd yardımcı programı, **\[StatusGet\]** komutu kullanılarak sanal Hub bilgileri elde edilebilir .
+![](https://www.softether.org/@api/deki/files/186/=3-4-15.png?size=webview)
+![][69]
+
+*Sanal Hub bilgi görüntüleme penceresi.*
+
+  **giriş**                   **Açıklama**
+  --------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  **NoIpTable**               Bu girdi true olduğunda, sanal Hub oluşturmak ve IP adresi tablosunu yönetir değildir.Sanal Hub IP katmanı paketlerini yorumlamak değil çünkü haberleşme hızı sanal Hub artar.
+  **ManageOnlyPrivateIP**     Bu girdi true olduğunda, sanal Hub sadece IP adresi masaya özel bir IP adresi kaydeder.Diğerleri kayıtlı değil.
+  **FilterPPPoE**             Bu girdi true olduğunda, sanal Hub paketlerinin (Ethernet üzerinden PPP) Bütün PPPoE atar.
+  **FilterOSPF**              Bu girdi true olduğunda, sanal Hub tüm OSPF (Open Kısa Yolu İlk) paketleri atar.
+  **YieldAfterStorePacket**   Bu girdi true olduğunda paketlerinin saklanması bir iş parçacığı hedef oturuma sıraya gönderdikten sonra, sanal Hub sonra CPU zamanla geçen oturumu verir. Nedeniyle gerçek set bu giriş için, iletişim hızı artabilir.  
+
+4. SOFTETHER VPN İSTEMCİ KILAVUZU
+=================================
+
+4.1.1 Windows
+
+SoftEther VPN Cilent, Microsoft Windows platformu destekliyor. Destek Windows NT 4.0 ve sonrası değil, aynı zamanda Windows 98 ve Windows Millennium Edition ve SoftEther VPN Client destekliyor ama eski sistemler için sadece Windows 2000'den yeni NT çekirdeği tabanlı platformlar için sağlanmaktadır.
+
+Windows sürümü SoftEther VPN Client aşağıdaki sistem mimarileri ile uyumludur. Uyumlu mimarileri gelecekte artacağının yüksek bir olasılık olduğunu unutmayın.
+
+\* x86
+
+\* x64 (AMD64 / EM64T)
+
+SoftEther VPN Cilent Windows'un 32-bit veya 64-bit (x64 sürümü) sürümlerinde kullanılabilir. 64-bit ortamlar için destek hakkında daha fazla bilgi için, Özellikler bakınız.
+
+4.1.2 Linux
+
+SoftEther VPN Client Linux çekirdeğinin 2.4 veya üstü ile platformlarda çalışır. Ancak, VPN Client Linux sürümü çeşitli sınırlamaları vardır ve bir GUI kullanarak çalıştırılamaz. Bu nedenle, VPN Client Linux sürümü Linux işletim sistemi ve ağların çok güçlü bir anlayış ile sadece kullanıcılar tarafından kullanılması tavsiye edilir.
+
+4.1.3 Diğer Sistemler
+
+Şu anda, SoftEther VPN Client yalnızca Windows ve Linux işletim sistemleri için sağlanmıştır. SoftEther VPN kullanıcıları diğer işletim sistemleri üzerinde VPN Client desteği için çok talep yok. Buna ek olarak, çoğu Windows olmayan işletim sistemleri, Windows ile karşılaştırıldığında işlemci bilgisayar fonksiyonlarını ağ ve tamamen tatmin edici sonuçlar temin edemeyebilir. Böyle bir sistemde VPN istemcisi kullanarak kötü destek sağlar.
+
+4.1.4 Sınırlar
+
+VPN Client kullanırken aşağıdaki sınırlamalar uygulanır.
+
+\* VPN Client Windows'un önceki sürümlerinde (Windows 98 veya daha eski) üzerinde kullanılamaz.
+
+\* SoftEther VPN Projesi VPN Client bir Linux sürümü sağlar, ancak yazılım ürününün bu sürümü düzgün çalışması için destek sağlamaz.
+
+\* VPN Client Linux sürümü otomatik olarak yönlendirme tablosunu yeniden bir işlevi yoktur. Varsayılan ağ geçidi olarak VPN bağlı kademe şekilde ayarlamak için, manual olarak VPN sunucusuna statik yol bağlamanız gerekebilir.
+
+\* Windows birkaç mevcut ağ ile ilgili sorunlar vardır. Bu sorunlar da VPN Client Sanal Ağ Adaptörü etkiler.
+
+4.2 VPN Client Kullanımı
+
+4.2.1 VPN Client Manager
+
+SoftEther VPN Client Manager, SoftEther VPN Client çalışmasına olanak sağlar.. Windows destekli grafik kullanıcı arayüzü (GUI) ile bir yardımcı programdır. Normalde, son kullanıcı VPN Client çalıştırmak için VPN Client Manager kullanır.
+
+VPN Client Manager kullanıcı kolayca bir Windows uygulaması ile GUI windows gerekli bilgileri menü öğeleri seçerek ve girerek neredeyse tüm VPN Client işlemlerinin çalışmasına olanak sağlar. Bu nedenle, VPN teknolojileri hakkında çok bilgisi olmadan bile kullanıcılar hızlı VPN Client çalıştırabilir.
+
+VPN Client Manager, VPN Client Windows sürümü ile aynı zamanda yüklenir.
+
+4.2.2 Command Line Management Utility
+
+SoftEther VPN Client Manager GUI uygulaması, ancak komut satırından aynı işlemleri gerçekleştirir, bir yardımcı olarak vpncmd kullanabilirsiniz.
+
+Kolayca faaliyet ve vpncmd kullanarak VPN Client kontrol ederek yönetimini otomatik hale getirebilirsiniz. Örneğin, otomatik olarak belirli bir zamanda belirli bir VPN sunucusuna bağlamak mümkündür. vpncmd ile normal VPN Client Manager ile tüm işlemler komut satırı kullanılarak yapılabilir.
+
+4.2.3 Task Tray Icon
+
+SoftEther VPN Client yüklü olduğunda, SoftEther VPN istemcisi simgesi görev çubuğunda, Windows görev tablasına yerleştirilir. Kullanıcı hızla pencereyi açmak zorunda kalmadan VPN Client Manager çalıştırmak için bu simgeyi kullanabilirsiniz.
+
+Buna ek olarak, görev tablası simgesinin ekranda geçerli VPN bağlantısı durumunu belirtir. Simgesi gri renkte ise, bu şu anda hiçbir VPN iletişimde olmadığını gösterir. Simgesi vurgulanır ve hızlı bir şekilde dönüyorsa, bu yazılım VPN Server'a bağlı olduğunu gösterir. Simge yavaş dönüyorsa, bu VPN oturumunun kurulduğunu gösterir.
+
+5.1 İŞLETİM SİSTEMİ GEREKSİNİMLERİ
+
+5.1.1 Windows
+
+SoftEther VPN Köprüsü, Microsoft Windows platformu destekliyor. Destek Windows NT 4.0 ve sonrası değil, aynı zamanda Windows 98 ve Windows Millennium Edition ve SoftEther VPN Köprüsü destekliyor ama eski sistemler için sadece Windows 2000'den yeni NT çekirdeği tabanlı platformlar için sağlanmaktadır.
+
+Windows sürümü SoftEther VPN Köprüsü aşağıdaki sistem mimarileri ile uyumludur. Uyumlu mimarileri gelecekte artacağının yüksek bir olasılık olduğunu unutmayın.
+
+\* x86
+
+\* x64 (AMD64 / EM64T)
+
+SoftEther VPN Köprüsü Windows'un 32-bit veya 64-bit (x64 sürümü) sürümlerinde kullanılabilir. 64-bit ortamlar için destek hakkında daha fazla bilgi için, Özellikler bakınız.
+
+5.1.2 Linux
+
+SoftEther VPN Köprüsü Linux platformu destekliyor. Sunucu Linux Kernel 2.4 veya sonraki çekirdek sürümleri çalıştırılabilir.
+
+Linux sürümü SoftEther VPN Köprüsü aşağıdaki sistem mimarileri ile uyumludur. Uyumlu mimarilerinin gelecekte artacağını yüksek bir olasılık olduğunu unutmayın.
+
+\* x86
+
+\* x64 (AMD64 / EM64T)
+
+\* PowerPC (32-bit mode)
+
+\* SH4 (32-bit mode)
+
+\* MIPS (32-bit mode)
+
+\* ARM (32-bit mode)
+
+SoftEther VPN Köprüsü Linux 32-bit veya 64-bit (x64 sürümü) ya sürümlerinde kullanılabilir. 64-bit ortamlar için destek hakkında daha fazla bilgi için, Özellikler bakınız.
+
+5.1.3 FreeBSD
+
+SoftEther VPN Köprüsü FreeBSD platformunu destekliyor. Sunucu FreeBSD 5.x veya daha sonra çekirdek sürümlerinde çalıştırılabilir.
+
+FreeBSD sürüm SoftEther VPN Köprüsü aşağıdaki sistem mimarileri ile uyumludur. Uyumlu mimarilerinin gelecekte artacağını yüksek bir olasılık olduğunu unutmayın.
+
+\* x86
+
+\* x64 (AMD64 / EM64T)
+
+SoftEther VPN Köprüsü FreeBSD 32-bit veya 64-bit (x64 sürümü) ya sürümlerinde kullanılabilir. 64-bit ortamlar için destek hakkında daha fazla bilgi için, Özellikler bakınız.
+
+5.1.4 Solaris
+
+SoftEther VPN Köprüsü Sun Microsystems Solaris platformunu destekliyor. Sunucu Solaris 8 veya daha yeni çekirdek sürümlerinde kullanılabilir.
+
+Solaris İşletim Sistemi SPARC işlemcileri kullanarak donanım üzerinde çalışır, çünkü bu özel donanıma sahip şirketleri etkin donanım söz konusu üzerinde SoftEther VPN Köprüsü çalıştırarak VPN sunucuları olarak kaynaklarını kullanabilirler.
+
+Solaris sürümü SoftEther VPN Köprüsü aşağıdaki sistem mimarileri ile uyumludur. uyumlu mimarilerini gelecekte artacağının yüksek bir olasılık olduğunu unutmayın.
+
+\* x86
+
+\* x64 (AMD64 / EM64T)
+
+\* SPARC (32-bit mode)
+
+\* SPARC (64-bit mode)
+
+SoftEther VPN Köprüsü, 32-bit veya 64-bit (x64 veya SPARCv9) Solaris sürümleri ya da üzerinde çalıştırılabilir. 64-bit ortamlar için destek hakkında daha fazla bilgi için, Özellikler bakınız.
+
+5.1.5 Mac OS X
+
+SoftEther VPN Köprüsü, Mac OS X platformu destekliyor. Sunucu Darwin 7.9.0 veya sonraki çekirdek sürümleri çalıştırılabilir.
+
+Mac OS X sürüm SoftEther VPN Köprüsü aşağıdaki sistem mimarileri ile uyumludur. Uyumlu mimarileri gelecekte artacağını yüksek bir olasılık olduğunu unutmayın.
+
+\* PowerPC (32-bit mode)
+
+\* PowerPC G5 (64-bit mode)
+
+\* x86 (32-bit mode, Mac OS for Intel CPU)
+
+\* x64 (64-bit mode, Mac OS for Intel CPU)
+
+5.1.6 Gömülü Cihazlar
+
+SoftEther VPN Köprüsü son derece portatiftir, bellek tasarrufu yazılım programlama kodu bulunmaktadır ve donanım aygıtlarının operasyonel gereksinimleri karşılamak için donanım yönlendiricileri, donanım cihazları, Layer 3 ve Layer 2 anahtarları, kablosuz LAN cihazları, dijital tüketici elektroniği ve otomobil minyatür bilgisayarlar ve benzeri sağlanan gömülü olabilir.
